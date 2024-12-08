@@ -1,5 +1,6 @@
 import './App.css'
-import Header from "./Header/Header.tsx"
+
+import Header from "./Header/Header.jsx"
 
 function App() {
   return (
