@@ -1,0 +1,52 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #ECEFF4;
+    font-size: 5rem;
+    white-space: nowrap;
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav {
+    margin-left: auto
+}
+
+.nav_item {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.nav_item a {
+    color: #ECEFF4;
+    text-decoration: none;
+}
+
+.nav_item a:hover {
+    color: #D8DEE9;
+    text-decoration: underline;
+}
+
+.mode_button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.mode_button img {
+    width: 30px;
+    height: 30px;
+}
