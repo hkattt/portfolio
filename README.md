@@ -12,7 +12,10 @@ For assets from the Noun project, read: https://help.thenounproject.com/hc/en-us
 
 Cat by Kim Sun Young from <a href="https://thenounproject.com/browse/icons/term/cat/" target="_blank" title="Cat Icons">Noun Project</a> (CC BY 3.0)
 
+2. Simple Icons: All the skills icons are from simple icons. Check the licenses
+
 Double check license for hero icons!
+Options: Hero icons, Feather Icons, Material Icons, The Noun Project, Simple Icons
 
 ## Inspiration
 1. Brittany Chiang: https://brittanychiang.com/
