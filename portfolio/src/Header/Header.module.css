@@ -17,6 +17,8 @@
 .nav_list {
     display: flex;
     list-style-type: none;
+    gap: 20px;
+    margin-right: 20px;
 }
 
 .nav {
@@ -24,7 +26,6 @@
 }
 
 .nav_item {
-    margin-right: 20px;
     white-space: nowrap;
 }
 
