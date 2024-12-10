@@ -2,7 +2,7 @@ import styles from "./Header.module.css"
 
 function Header() {
     return(
-        <div className={styles.header}>
+        <header className={styles.header}>
             <h1 className={styles.title}>Hugo Kat</h1>
             <nav className={styles.nav}>
                 <ul className={styles.nav_list}>
@@ -15,7 +15,7 @@ function Header() {
             <button className={styles.mode_button}>
                 <img src="/moon.svg" alt="Dark Mode Button" />
             </button>
-        </div>
+        </header>
     )
 }
 
