@@ -23,20 +23,25 @@ Options: Hero icons, Feather Icons, Material Icons, The Noun Project, Simple Ico
 3. Tamal Sen: https://tamalsen.dev/
 4. Annie Bombanie: https://anniebombanie.com/
 
-4. Tobias Ahlin: https://tobiasahlin.com
-5. Cassie Evans: https://www.cassie.codes/
-6. Amie Chen: https://amie-chen.com/
-7. Troy Story Games: https://www.troystorygames.com/
-8. Oluwadare Oluwaseyi: https://www.seyi.dev/
+
+5. Tobias Ahlin: https://tobiasahlin.com
+6. Cassie Evans: https://www.cassie.codes/
+7. Amie Chen: https://amie-chen.com/
+8. Troy Story Games: https://www.troystorygames.com/
+9. Oluwadare Oluwaseyi: https://www.seyi.dev/
+
+license stuff: https://isabel-prime.github.io/
 
 
 ## Look into?
 1. Style React components using external frameworks (e.g. tailwind) or preprocessors such as SaaS
-2. What is yarn used for?
-3. Look into deployments (see Brittany's GitHub). Like what is she deploying?
-4. Why is GitHub not identifying my language?
-5. What is React Router?
-6. What is CodePen?
+2. Extend the project to use Next.JS?
+3. What is yarn used for?
+4. Look into deployments (see Brittany's GitHub). Like what is she deploying?
+5. Why is GitHub not identifying my language?
+6. What is React Router?
+7. What is CodePen?
+8. What is fluent UI?
 
 ## TODO
 1. Decide how I want to design my website (e.g. using FIGMA)

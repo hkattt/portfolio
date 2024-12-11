@@ -1,7 +1,6 @@
 .skill {
-    text-align: center;
-    background-color: #3B4252;
-    border-radius: 10px;
+    display: inline-block;
+    justify-content: center;
     padding: 10px;
 }
 
