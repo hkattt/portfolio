@@ -11,6 +11,8 @@ interface ProjectProp {
     technologies: Technology[];
 }
 
+// TODO: Look at Simple Icons grid styling for ideas on this!!!
+
 function Project({title, description, technologies}: ProjectProp) {
     return(
         <div className={styles.project}>
@@ -24,9 +26,8 @@ function Project({title, description, technologies}: ProjectProp) {
             <ul className={styles.technologies}>
                 {
                     technologies.map((technology, index) => (
-                        <li className={styles.technology}>
+                        <li key={index}  className={styles.technology}>
                             <img 
-                                key={index} 
                                 src={technology.src} 
                                 alt={technology.alt} 
                             />
