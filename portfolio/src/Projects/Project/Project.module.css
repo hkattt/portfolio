@@ -1,0 +1,40 @@
+.project {
+    background-color: #2E3440;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project:hover {
+    background-color: #3B4252;
+}
+
+.header {
+    display: flex;
+}
+
+.header img {
+    width: 30px;
+    height: 30px;
+}
+
+.title {
+    color: #ECEFF4;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.description {
+    color: #ECEFF4;
+}
+
+.technologies {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.technology img {
+    width: 30px;
+    height: 30px;
+}
+

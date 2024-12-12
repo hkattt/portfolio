@@ -9,8 +9,8 @@ interface SkillProps {
 function Skill({image, alt, text}: SkillProps) {
     return(
         <div className={styles.skill}>
-            <img className={styles.skill_img} src={image} alt={alt} />
-            <p className={styles.skill_text}>{text}</p>
+            <img className={styles.skillImg} src={image} alt={alt} />
+            <p className={styles.skillText}>{text}</p>
         </div>
     )
 }

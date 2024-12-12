@@ -1,6 +1,6 @@
 import styles from "./Skills.module.css"
 
-import Skill from "./Skill/Skill.jsx"
+import Skill from "./Skill/Skill.tsx"
 
 const skills = [
     {image: "c.svg",           alt: "C Logo",            text: "C"},
@@ -21,18 +21,20 @@ const skills = [
 
 function Skills() {
     return(
-        <div className={styles.skills}>
-            {
-                skills.map((skill, index) => (
-                    <Skill 
-                        key={index} 
-                        image={skill.image} 
-                        alt={skill.alt} 
-                        text={skill.text}
-                    />
-                ))
-            }
-        </div>
+        <section id="Skills" aria-label="My Skills">
+            <div className={styles.skills}>
+                {
+                    skills.map((skill, index) => (
+                        <Skill 
+                            key={index} 
+                            image={skill.image} 
+                            alt={skill.alt} 
+                            text={skill.text}
+                        />
+                    ))
+                }
+            </div>
+        </section>
     );
 }
 
