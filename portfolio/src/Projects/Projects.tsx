@@ -37,7 +37,7 @@ function Projects() {
     return(
         <section id="Projects" aria-label="My Projects">
             <h2 className={styles.title}>Projects</h2>
-            <div>
+            <div className={styles.projects}>
                 {
                     projects.map((project, index) => (
                         <Project 

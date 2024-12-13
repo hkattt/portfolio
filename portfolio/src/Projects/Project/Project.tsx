@@ -18,7 +18,7 @@ function Project({title, description, technologies}: ProjectProp) {
         <div className={styles.project}>
             <div className={styles.header}>
                 <h3 className={styles.title}>{title}</h3>
-                <a href="https://github.com" target="_blank">
+                <a className={styles.github} href="https://github.com" target="_blank">
                     <img src="github.svg" alt="GitHub Icon"/>
                 </a>
             </div>
