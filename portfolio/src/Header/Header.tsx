@@ -6,9 +6,9 @@ function Header() {
             <div className={styles.bar}>
                 <nav className={styles.nav}>
                     <ul className={styles.navList}>
-                        <li className={styles.navItem}><a href="/about">About</a></li>
-                        <li className={styles.navItem}><a href="/skills">Skills</a></li>
-                        <li className={styles.navItem}><a href="/projects">Projects</a></li>
+                        <li className={styles.navItem}><a href="#About">About</a></li>
+                        <li className={styles.navItem}><a href="#Skills">Skills</a></li>
+                        <li className={styles.navItem}><a href="#Projects">Projects</a></li>
                     </ul>
                 </nav>
                 <button className={styles.themeButton}>
