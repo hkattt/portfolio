@@ -26,6 +26,7 @@
 }
 
 .navItem a {
+    font-size: 1.3rem;
     color: var(--font-primary);
     text-decoration: none;
     padding: 5px;
@@ -47,6 +48,7 @@
 .themeButton img {
     width: 30px;
     height: 30px;
+    filter: var(--light-filter)
 }
 
 .title {
@@ -57,8 +59,8 @@
 }
 
 .introduction {
-    color: var(--font-secondary);
-    font-size: 2rem;
+    color: var(--font-tertiary);
+    font-size: 1.5rem;
     white-space: no-wrap;
     margin-top: 0px;
 }

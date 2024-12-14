@@ -12,6 +12,9 @@
   --accent-secondary:     #81A1C1;
   --accent-tertiary:      #88C0D0;
 
+  --light-filter: invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
+  --dark-filter:  invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
+
   background-color: var(--background-primary);
 
   font-synthesis: none;

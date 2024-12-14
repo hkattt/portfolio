@@ -11,4 +11,5 @@
 .skillImg {
     width: 50px;
     height: 50px;
+    filter: var(--light-filter)
 }
