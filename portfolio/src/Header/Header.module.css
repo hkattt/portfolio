@@ -9,7 +9,7 @@
 }
 
 .title {
-    color: #ECEFF4;
+    color: var(--font-primary);
     font-size: 5rem;
     white-space: nowrap;
 }
@@ -29,13 +29,15 @@
 }
 
 .navItem a {
-    color: #ECEFF4;
+    color: var(--font-primary);
     text-decoration: none;
+    padding: 5px;
 }
 
 .navItem a:hover {
-    color: #D8DEE9;
-    text-decoration: underline;
+    color: var(--font-secondary);
+    background-color: var(--background-tertiary);
+    border-radius: 5px;
 }
 
 .modeButton {

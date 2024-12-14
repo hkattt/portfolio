@@ -2,14 +2,22 @@
   font-family: "Actor", sans-serif;
   font-style: normal;
 
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87); */
-  background-color: #2E3440;
+  --background-primary:   #2E3440;
+  --background-secondary: #3B4252;
+  --background-tertiary:  #424C5E;
+  --font-primary:         #ECEFF4;
+  --font-secondary:       #E5E9F0;
+  --font-tertiary:        #D8DEE9;
+  --accent-primary:       #5E81AC;
+  --accent-secondary:     #81A1C1;
+  --accent-tertiary:      #88C0D0;
 
-  /*font-synthesis: none;
+  background-color: var(--background-primary);
+
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;*/
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html, body {

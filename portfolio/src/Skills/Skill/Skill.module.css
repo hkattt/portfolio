@@ -5,7 +5,7 @@
 }
 
 .skillText {
-    color: #ECEFF4;
+    color: var(--font-primary);
 }
 
 .skillImg {
