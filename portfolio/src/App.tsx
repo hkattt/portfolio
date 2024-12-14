@@ -2,13 +2,14 @@ import './App.css'
 
 import Header from "./Header/Header.tsx"
 import Content from "./Content/Content.tsx"
+import Footer from "./Footer/Footer.tsx"
 
 function App() {
-  // TODO: What about a <footer> tag?
   return (
     <>
       <Header/>
       <Content/>
+      <Footer/>
     </>
   )
 }

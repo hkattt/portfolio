@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.text {
+    color: var(--font-primary);
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.text a {
+    color: var(--accent-primary);
+}
+
+.text a:hover {
+    color: var(--accent-tertiary);
+}
+
+.socials {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    filter: var(--light-filter);
+}
