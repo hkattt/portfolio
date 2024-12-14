@@ -11,8 +11,6 @@ interface ProjectProp {
     technologies: Technology[];
 }
 
-// TODO: Look at Simple Icons grid styling for ideas on this!!!
-
 function Project({title, description, technologies}: ProjectProp) {
     return(
         <div className={styles.project}>

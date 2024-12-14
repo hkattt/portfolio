@@ -22,6 +22,7 @@ const skills = [
 function Skills() {
     return(
         <section id="Skills" aria-label="My Skills">
+            <h2 className={styles.title}>Skills</h2>
             <div className={styles.skills}>
                 {
                     skills.map((skill, index) => (
