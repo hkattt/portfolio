@@ -32,6 +32,10 @@
     filter: var(--light-filter)
 }
 
+.github img:hover {
+    transform: scale(1.2);
+}
+
 .description {
     color: var(--font-primary);
     text-align: left;

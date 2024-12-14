@@ -9,7 +9,6 @@ function Header() {
                         <li className={styles.navItem}><a href="/about">About</a></li>
                         <li className={styles.navItem}><a href="/skills">Skills</a></li>
                         <li className={styles.navItem}><a href="/projects">Projects</a></li>
-                        <li className={styles.navItem}><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
                 <button className={styles.themeButton}>

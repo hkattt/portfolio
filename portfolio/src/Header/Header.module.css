@@ -51,6 +51,10 @@
     filter: var(--light-filter)
 }
 
+.themeButton img:hover {
+    transform: scale(1.2);
+}
+
 .title {
     color: var(--font-primary);
     font-size: 5rem;
