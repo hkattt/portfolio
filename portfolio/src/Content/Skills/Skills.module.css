@@ -1,6 +1,18 @@
 .skills {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 25px;
     justify-content: center;
+}
+
+@media (max-width: 750px) {
+    .skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

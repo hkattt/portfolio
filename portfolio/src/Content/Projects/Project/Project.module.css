@@ -35,6 +35,7 @@
 .description {
     color: var(--font-primary);
     text-align: left;
+    font-size: 1.25rem;
 }
 
 .technologies {
