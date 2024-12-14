@@ -2,16 +2,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 10%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
-.title {
-    color: var(--font-primary);
-    font-size: 5rem;
-    white-space: nowrap;
+.bar {
+    display: flex;
+    align-items: center;
 }
 
 .navList {
@@ -40,14 +37,28 @@
     border-radius: 5px;
 }
 
-.modeButton {
+.themeButton {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
 }
 
-.modeButton img {
+.themeButton img {
     width: 30px;
     height: 30px;
+}
+
+.title {
+    color: var(--font-primary);
+    font-size: 5rem;
+    white-space: nowrap;
+    margin: 50px;
+}
+
+.introduction {
+    color: var(--font-secondary);
+    font-size: 2rem;
+    white-space: no-wrap;
+    margin-top: 0px;
 }
