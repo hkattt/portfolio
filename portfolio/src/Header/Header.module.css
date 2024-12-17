@@ -48,11 +48,12 @@
 .themeButton img {
     width: 30px;
     height: 30px;
-    filter: var(--filter)
+    filter: var(--primary-filter);
 }
 
 .themeButton img:hover {
     transform: scale(1.2);
+    filter: var(--selected-filter);
 }
 
 .title {

@@ -28,7 +28,9 @@ html[theme="light"] {
   --accent-secondary:     #81A1C1;
   --accent-tertiary:      #88C0D0;
 
-  --filter:  invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
+  --primary-filter:  invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
+  --selected-filter: invert(66%) sepia(11%) saturate(930%) hue-rotate(169deg) brightness(91%) contrast(96%);
+
 }
 
 html[theme="dark"] {
@@ -42,7 +44,8 @@ html[theme="dark"] {
   --accent-secondary:     #81A1C1;
   --accent-tertiary:      #88C0D0;
 
-  --filter: invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
+  --primary-filter:  invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
+  --selected-filter: invert(66%) sepia(11%) saturate(930%) hue-rotate(169deg) brightness(91%) contrast(96%);
 }
 
 * {
