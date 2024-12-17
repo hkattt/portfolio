@@ -1,6 +1,24 @@
+import { useEffect, useState } from "react";
+
 import styles from "./Header.module.css"
 
 function Header() {
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        // Retrieve the previous theme or default to light mode
+        const savedTheme: string = localStorage.getItem("theme") || "light";
+        setIsDark(savedTheme === "dark");
+        document.documentElement.setAttribute("theme", savedTheme);
+    }, [])
+
+    const switchTheme = () => {
+        setIsDark(!isDark);
+        const newTheme: string = isDark ? "light" : "dark";
+        document.documentElement.setAttribute("theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+    };
+
     return(
         <header className={styles.header}>
             <div className={styles.bar}>
@@ -11,7 +29,7 @@ function Header() {
                         <li className={styles.navItem}><a href="#Projects">Projects</a></li>
                     </ul>
                 </nav>
-                <button className={styles.themeButton}>
+                <button className={styles.themeButton} onClick={switchTheme}>
                     <img src="/moon.svg" alt="Theme Button" />
                 </button>
             </div>

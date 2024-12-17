@@ -48,7 +48,7 @@
 .themeButton img {
     width: 30px;
     height: 30px;
-    filter: var(--light-filter)
+    filter: var(--filter)
 }
 
 .themeButton img:hover {

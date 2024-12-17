@@ -2,19 +2,6 @@
   font-family: "Actor", sans-serif;
   font-style: normal;
 
-  --background-primary:   #2E3440;
-  --background-secondary: #3B4252;
-  --background-tertiary:  #424C5E;
-  --font-primary:         #ECEFF4;
-  --font-secondary:       #E5E9F0;
-  --font-tertiary:        #D8DEE9;
-  --accent-primary:       #5E81AC;
-  --accent-secondary:     #81A1C1;
-  --accent-tertiary:      #88C0D0;
-
-  --light-filter: invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
-  --dark-filter:  invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
-
   background-color: var(--background-primary);
 
   font-synthesis: none;
@@ -30,8 +17,37 @@ html, body {
   width: 100%;
 }
 
+html[theme="light"] {
+  --background-primary:   #D8DEE9;
+  --background-secondary: #E5E9F0;
+  --background-tertiary:  #ECEFF4;
+  --font-primary:         #2E3440;
+  --font-secondary:       #3B4252;
+  --font-tertiary:        #424C5E;
+  --accent-primary:       #5E81AC;
+  --accent-secondary:     #81A1C1;
+  --accent-tertiary:      #88C0D0;
+
+  --filter:  invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
+}
+
+html[theme="dark"] {
+  --background-primary:   #2E3440;
+  --background-secondary: #3B4252;
+  --background-tertiary:  #424C5E;
+  --font-primary:         #ECEFF4;
+  --font-secondary:       #E5E9F0;
+  --font-tertiary:        #D8DEE9;
+  --accent-primary:       #5E81AC;
+  --accent-secondary:     #81A1C1;
+  --accent-tertiary:      #88C0D0;
+
+  --filter: invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
+}
+
 * {
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 ul {
