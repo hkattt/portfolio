@@ -6,12 +6,10 @@ import Projects from './Projects/Projects.tsx'
 
 function Content() {
     return(
-        <main id="content">
-            <div className={styles.content}>
-                <About/>
-                <Skills/>
-                <Projects/>
-            </div>
+        <main className={styles.content}>
+            <About/>
+            <Skills/>
+            <Projects/>
       </main>
     )
 }

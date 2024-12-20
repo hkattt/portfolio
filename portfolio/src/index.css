@@ -2,7 +2,8 @@
   font-family: "Actor", sans-serif;
   font-style: normal;
 
-  background-color: var(--background-primary);
+  --content-width: 1100px;
+  background-color: var(--background-secondary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
