@@ -17,7 +17,9 @@ const projects = [
                 alt: "Github Logo"
             },
         ],
-        description: "Interrogation is a murder-mystery game created for GitHub Game Off 2024.",
+        description: <>
+            Interrogation is a murder-mystery game created for <a href="https://itch.io/jam/game-off-2024" target="_blank" rel="noopener noreferrer">GitHub Game Off 2024</a>.
+        </>,
         technologies: [
             {
                 src: "godotengine.svg",
@@ -34,7 +36,9 @@ const projects = [
                 alt: "Github Logo"
             },
         ],
-        description: "Reimplemented Aaron Hertzmann's Fast Paint Texture algorithm. The program generates images with a hand-painted appearance from a provided source image.",
+        description: <>
+            Reimplemented Aaron Hertzmann's Fast Paint Texture algorithm. The program generates images with a hand-painted appearance from a provided source image.
+        </>,
         technologies: [
             {
                 src: "cplusplus.svg",

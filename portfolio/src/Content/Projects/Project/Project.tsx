@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 import styles from "./Project.module.css"
 
 interface Link {
@@ -14,7 +16,7 @@ interface Technology {
 interface ProjectProp {
     title: string;
     links: Link[];
-    description: string;
+    description: ReactNode;
     technologies: Technology[];
 }
 
@@ -27,7 +29,7 @@ function Project({title, links, description, technologies}: ProjectProp) {
                     {
                         links.map((link, index) => (
                             <li key={index}>
-                                <a className={styles.link} href={link.link} target="_blank">
+                                <a className={styles.link} href={link.link} target="_blank" rel="noopener noreferrer">
                                     <img src={link.src} alt={link.alt}/>
                                 </a>
                             </li>
