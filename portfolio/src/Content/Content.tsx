@@ -6,7 +6,7 @@ import Projects from './Projects/Projects.tsx'
 
 function Content() {
     return(
-        <main className={styles.content}>
+        <main id="Content" className={styles.content}>
             <About/>
             <Skills/>
             <Projects/>

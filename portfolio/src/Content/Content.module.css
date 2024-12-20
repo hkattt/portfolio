@@ -1,8 +1,9 @@
 .content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 20px;
+    gap: 50px;
     margin: 50px auto;
+    padding: 25px;
     max-width: var(--content-width);
     width: 100%;
     justify-content: center;

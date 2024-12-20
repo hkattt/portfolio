@@ -2,13 +2,13 @@
     color: var(--font-primary);
     font-size: 2rem;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
 .line {
     color: var(--font-primary);
     width: 30%;
-    margin-bottom: 30px;
 }
 
 .about {
