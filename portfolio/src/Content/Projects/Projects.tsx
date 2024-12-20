@@ -4,7 +4,7 @@ import Project from "./Project/Project.tsx"
 
 const projects = [
     {
-        title: "First Project", 
+        title: "Interrogation", 
         links: [
             {
                 link: "https://itch.io/jam/game-off-2024/rate/3148097",
@@ -17,20 +17,16 @@ const projects = [
                 alt: "Github Logo"
             },
         ],
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dignissimos obcaecati magni iusto mollitia aperiam a id ipsa tempora ad eum numquam assumenda expedita consectetur consequuntur voluptatem facere, perspiciatis accusamus.",
+        description: "Interrogation is a murder-mystery game created for GitHub Game Off 2024.",
         technologies: [
             {
-                src: "c.svg",
-                alt: "C Logo"
-            },
-            {
-                src: "linux.svg",
-                alt: "Linux Logo"
+                src: "godotengine.svg",
+                alt: "Godot Engine Logo"
             }
         ]
     },
     {
-        title: "Second Project", 
+        title: "Fast Paint Texture", 
         links: [
             {
                 link: "https://github.com/hkattt/fast-paint-texture",
@@ -38,11 +34,15 @@ const projects = [
                 alt: "Github Logo"
             },
         ],
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dignissimos obcaecati magni iusto mollitia aperiam a id ipsa tempora ad eum numquam assumenda expedita consectetur consequuntur voluptatem facere, perspiciatis accusamus.",
+        description: "Reimplemented Aaron Hertzmann's Fast Paint Texture algorithm. The program generates images with a hand-painted appearance from a provided source image.",
         technologies: [
             {
-                src: "c.svg",
-                alt: "C Logo"
+                src: "cplusplus.svg",
+                alt: "C++ Logo"
+            },
+            {
+                src: "cmake.svg",
+                alt: "CMake Logo"
             },
             {
                 src: "linux.svg",
