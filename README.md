@@ -8,7 +8,7 @@ This is my personal website made using Vite, React, and TypeScript
 
 ## Assets
 For assets from the Noun project, read: https://help.thenounproject.com/hc/en-us/articles/200509928-How-do-I-give-creators-credit-in-my-work
-1. Cat Icon: https://thenounproject.com/icon/cat-7374684/
+1. Cat Icon: https://www.svgrepo.com/svg/509787/cat
 2. Globe icon: https://www.svgrepo.com/svg/513157/globe-1 
 
 Cat by Kim Sun Young from <a href="https://thenounproject.com/browse/icons/term/cat/" target="_blank" title="Cat Icons">Noun Project</a> (CC BY 3.0)
@@ -17,6 +17,8 @@ Cat by Kim Sun Young from <a href="https://thenounproject.com/browse/icons/term/
 
 Double check license for hero icons!
 Options: Hero icons, Feather Icons, Material Icons, The Noun Project, Simple Icons
+
+Font: https://rsms.me/inter/
 
 ## Inspiration
 1. Brittany Chiang: https://brittanychiang.com/
