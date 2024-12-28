@@ -23,7 +23,7 @@ function Header() {
                     </span>
                 </div>
                 <h1 className={styles.title}>Hugo Kat</h1>
-                <p className={styles.introduction}>Junior software developer and computer science student @ the ANU.</p>
+                <p className={styles.introduction}>Junior software developer and computer science student @ the ANU</p>
             </div>
         </header>
     )
