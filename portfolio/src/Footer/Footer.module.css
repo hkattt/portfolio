@@ -12,7 +12,7 @@
 }
 
 .text {
-    color: var(--font-primary);
+    color: var(--font-tertiary);
     text-align: left;
     font-size: 1.2rem;
     margin-right: 25px;

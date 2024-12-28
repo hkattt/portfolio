@@ -13,8 +13,9 @@
 }
 
 .title {
-    color: var(--font-primary);
+    color: var(--font-secondary);
     font-size: 1.5rem;
+    font-weight: 600;
     white-space: nowrap;
     margin: 0px;
 }
@@ -43,7 +44,7 @@
 }
 
 .description {
-    color: var(--font-primary);
+    color: var(--font-tertiary);
     text-align: left;
     font-size: 1.25rem;
 }

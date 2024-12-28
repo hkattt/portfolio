@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css"
 
 import Project from "./Project/Project.tsx"
+import Title from "../Title/Title.tsx"
 
 const projects = [
     {
@@ -59,8 +60,7 @@ const projects = [
 function Projects() {
     return(
         <section id="Projects" aria-label="My Projects">
-            <h2 className={styles.title}>Projects</h2>
-            <hr className={styles.line}/>
+            <Title title="Projects"/>
             <div className={styles.projects}>
                 {
                     projects.map((project, index) => (

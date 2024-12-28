@@ -1,6 +1,7 @@
 import styles from "./Skills.module.css"
 
 import Skill from "./Skill/Skill.tsx"
+import Title from "../Title/Title.tsx"
 
 const skills = [
     {image: "c.svg",           alt: "C Logo",            text: "C"},
@@ -22,8 +23,7 @@ const skills = [
 function Skills() {
     return(
         <section id="Skills" aria-label="My Skills">
-            <h2 className={styles.title}>Skills</h2>
-            <hr className={styles.line}/>
+            <Title title="Skills"/>
             <div className={styles.skills}>
                 {
                     skills.map((skill, index) => (
