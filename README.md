@@ -26,19 +26,25 @@ Font: https://rsms.me/inter/
 3. Tamal Sen: https://tamalsen.dev/
 4. Annie Bombanie: https://anniebombanie.com/
 5. Adenekan: https://www.codewonders.dev/
+6. tkat0: https://www.tkat0.dev/en/
 
-6. Tobias Ahlin: https://tobiasahlin.com
-7. Cassie Evans: https://www.cassie.codes/
-8. Amie Chen: https://amie-chen.com/
-9. Troy Story Games: https://www.troystorygames.com/
-10. Oluwadare Oluwaseyi: https://www.seyi.dev/
+7. Tobias Ahlin: https://tobiasahlin.com
+8. Cassie Evans: https://www.cassie.codes/
+9. Amie Chen: https://amie-chen.com/
+10. Troy Story Games: https://www.troystorygames.com/
+11. Oluwadare Oluwaseyi: https://www.seyi.dev/
 
 More inspo: https://careerfoundry.com/en/blog/web-development/software-engineer-portfolio/ 
 
 license stuff: https://isabel-prime.github.io/
 
 
+Use PocketBase as the database???
+
 ## Look into?
+
+Environment variables for API stuff
+
 1. Style React components using external frameworks (e.g. tailwind) or preprocessors such as SaaS
 2. Extend the project to use Next.JS?
 3. What is yarn used for?

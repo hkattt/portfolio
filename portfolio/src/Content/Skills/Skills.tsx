@@ -7,7 +7,7 @@ const skills = [
     {image: "cplusplus.svg",   alt: "C++ Logo",          text: "C++"},
     {image: "css3.svg",        alt: "CSS3 Logo",         text: "CSS"},
     // {image: "dotnet.svg",      alt: ".NET Logo",         text: ".NET"},
-    {image: "git.svg",         alt: "Git Logo",          text: "GitHub"},
+    {image: "git.svg",         alt: "Git Logo",          text: "Git"},
     {image: "godotengine.svg", alt: "Godot Engine Logo", text: "Godot Engine"},
     {image: "gnubash.svg",     alt: "GNU Bash Logo",     text: "Bash"},
     {image: "html5.svg",       alt: "HTML5 Logo",        text: "HTML"},
