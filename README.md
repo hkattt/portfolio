@@ -27,12 +27,13 @@ Font: https://rsms.me/inter/
 4. Annie Bombanie: https://anniebombanie.com/
 5. Adenekan: https://www.codewonders.dev/
 6. tkat0: https://www.tkat0.dev/en/
+7. Ciprian Craciun: https://stefaniq.com/ 
 
-7. Tobias Ahlin: https://tobiasahlin.com
-8. Cassie Evans: https://www.cassie.codes/
-9. Amie Chen: https://amie-chen.com/
-10. Troy Story Games: https://www.troystorygames.com/
-11. Oluwadare Oluwaseyi: https://www.seyi.dev/
+8. Tobias Ahlin: https://tobiasahlin.com
+9. Cassie Evans: https://www.cassie.codes/
+10. Amie Chen: https://amie-chen.com/
+11. Troy Story Games: https://www.troystorygames.com/
+12. Oluwadare Oluwaseyi: https://www.seyi.dev/
 
 More inspo: https://careerfoundry.com/en/blog/web-development/software-engineer-portfolio/ 
 

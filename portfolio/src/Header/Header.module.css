@@ -50,3 +50,9 @@
     white-space: no-wrap;
     margin-top: 0px;
 }
+
+.email {
+    color: var(--font-tertiary);
+    font-size: 1.5rem;
+    white-space: no-wrap;
+}
