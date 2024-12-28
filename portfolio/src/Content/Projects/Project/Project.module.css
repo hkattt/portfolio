@@ -58,6 +58,6 @@
 .technology img {
     width: 30px;
     height: 30px;
-    filter: var(--primary-filter);
+    filter: var(--tertiary-filter);
 }
 

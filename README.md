@@ -20,6 +20,8 @@ Options: Hero icons, Feather Icons, Material Icons, The Noun Project, Simple Ico
 
 Font: https://rsms.me/inter/
 
+Filter generator: https://codepen.io/sosuke/pen/Pjoqqp
+
 ## Inspiration
 1. Brittany Chiang: https://brittanychiang.com/
 2. Max Bock: https://mxb.dev/
