@@ -88,7 +88,7 @@ const projects = [
 function Projects() {
     return(
         <section id="Projects" aria-label="My Projects">
-            <Title title="PROJECTS"/>
+            <Title title="Projects"/>
             <p className={styles.text}>A showcase of some of the projects that I have built.</p>
             <div className={styles.projects}>
                 {

@@ -35,12 +35,12 @@
 .link img {
     width: 30px;
     height: 30px;
-    filter: var(--primary-filter);
+    filter: var(--font-primary-filter);
 }
 
 .link img:hover {
     transform: scale(1.2);
-    filter: var(--selected-filter);
+    filter: var(--accent-primary-filter);
 }
 
 .description {
@@ -58,6 +58,6 @@
 .technology img {
     width: 30px;
     height: 30px;
-    filter: var(--tertiary-filter);
+    filter: var(--font-tertiary-filter);
 }
 

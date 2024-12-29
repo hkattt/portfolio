@@ -25,12 +25,12 @@
 .icon {
     width: 30px;
     height: 30px;
-    filter: var(--primary-filter);
+    filter: var(--font-primary-filter);
 }
 
 .icon:hover {
     transform: scale(1.2);
-    filter: var(--selected-filter);
+    filter: var(--accent-primary-filter);
 }
 
 .themeButtonContainer {

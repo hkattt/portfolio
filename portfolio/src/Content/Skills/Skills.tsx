@@ -21,7 +21,7 @@ const skills = [
 function Skills() {
     return(
         <section id="Skills" aria-label="My Skills">
-            <Title title="SKILLS"/>
+            <Title title="Skills"/>
             <p className={styles.text}>The skills and technologies that I am familiar with.</p>
             <div className={styles.skills}>
                 {

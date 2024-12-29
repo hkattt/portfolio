@@ -5,6 +5,14 @@
 
   --content-width: 1000px;
 
+  --accent-primary:       #8FBCBB;
+  --accent-secondary:     #88C0D0;
+  --accent-tertiary:      #81A1C1;
+
+  --accent-primary-filter:   invert(72%) sepia(3%) saturate(2114%) hue-rotate(130deg) brightness(100%) contrast(89%);
+  --accent-secondary-filter: invert(80%) sepia(16%) saturate(648%) hue-rotate(147deg) brightness(89%) contrast(89%);
+  --accent-tertiary-filter:  invert(62%) sepia(62%) saturate(190%) hue-rotate(169deg) brightness(91%) contrast(85%);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -39,14 +47,10 @@ html[theme="light"] {
   --font-primary:         #2E3440;
   --font-secondary:       #3B4252;
   --font-tertiary:        #424C5E;
-  --accent-primary:       #5E81AC;
-  --accent-secondary:     #81A1C1;
-  --accent-tertiary:      #88C0D0;
   
-  --primary-filter:   invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
-  --secondary-filter: invert(23%) sepia(19%) saturate(635%) hue-rotate(184deg) brightness(91%) contrast(87%);
-  --tertiary-filter:  invert(27%) sepia(11%) saturate(1072%) hue-rotate(180deg) brightness(96%) contrast(89%);
-  --selected-filter:  invert(66%) sepia(11%) saturate(930%) hue-rotate(169deg) brightness(91%) contrast(96%);
+  --font-primary-filter:   invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
+  --font-secondary-filter: invert(23%) sepia(19%) saturate(635%) hue-rotate(184deg) brightness(91%) contrast(87%);
+  --font-tertiary-filter:  invert(27%) sepia(11%) saturate(1072%) hue-rotate(180deg) brightness(96%) contrast(89%);
 }
 
 html[theme="dark"] {
@@ -55,15 +59,12 @@ html[theme="dark"] {
   --background-tertiary:  #424C5E;
   --font-primary:         #ECEFF4;
   --font-secondary:       #E5E9F0;
-  --font-tertiary:        #D8DEE9;
-  --accent-primary:       #BF616A;
-  --accent-secondary:     #BF616A;
-  --accent-tertiary:      #BF616A;  
+  --font-tertiary:        #D8DEE9; 
 
-  --primary-filter:   invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
-  --secondary-filter: invert(96%) sepia(4%) saturate(265%) hue-rotate(179deg) brightness(96%) contrast(97%);
-  --tertiary-filter:  invert(92%) sepia(21%) saturate(270%) hue-rotate(185deg) brightness(98%) contrast(86%);
-  --selected-filter:  invert(48%) sepia(37%) saturate(708%) hue-rotate(305deg) brightness(88%) contrast(85%);
+  --font-primary-filter:   invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
+  --font-secondary-filter: invert(96%) sepia(4%) saturate(265%) hue-rotate(179deg) brightness(96%) contrast(97%);
+  --font-tertiary-filter:  invert(92%) sepia(21%) saturate(270%) hue-rotate(185deg) brightness(98%) contrast(86%);
+  --font-selected-filter:  invert(48%) sepia(37%) saturate(708%) hue-rotate(305deg) brightness(88%) contrast(85%);
 }
 
 * {
@@ -90,4 +91,9 @@ a {
 
 a:hover {
   color: var(--accent-primary);
+}
+
+br {
+  margin-bottom: 20px;
+  display: inline-block;
 }
