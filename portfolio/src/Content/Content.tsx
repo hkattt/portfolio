@@ -10,7 +10,7 @@ function Content() {
             <About/>
             <Skills/>
             <Projects/>
-      </main>
+        </main>
     )
 }
 
