@@ -1,14 +1,8 @@
 .title {
     color: var(--font-secondary);
-    font-size: 2rem;
-    font-weight: normal;
-    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
     margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.line {
-    color: var(--font-secondary);
-    width: 50%;
     margin-bottom: 20px;
 }

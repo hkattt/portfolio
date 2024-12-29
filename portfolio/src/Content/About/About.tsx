@@ -5,9 +5,11 @@ import Title from "../Title/Title.tsx"
 function About() {
     return(
         <section id="About" aria-label="About">
-            <Title title="About"/>
+            <Title title="ABOUT"/>
             <p className={styles.about}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsa! Laboriosam doloremque eligendi voluptatum perferendis! Maiores recusandae vel odio illum minima aut quam distinctio nisi voluptatibus quas. Fuga, eveniet et?
+                I am currently studying a Bachelor of Advanced Computing (Honours) at the <a href="https://www.anu.edu.au/" target="_blank" rel="noopener noreferrer">Australian National University</a>. 
+                <br/>
+                I also enjoy playing football, videogames, and watching movies. 
             </p>
         </section>
     )

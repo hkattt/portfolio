@@ -61,13 +61,35 @@ const projects = [
                 title: "Linux icon from Simple Icons"
             }
         ]
+    },
+    {
+        title: "Gopher Web Crawler", 
+        links: [
+            {
+                link: "https://github.com/hkattt/gopher-web-crawler",
+                src: "github.svg",
+                alt: "Github Logo",
+                title: "GitHub icon from Simple Icons"
+            },
+        ],
+        description: <>
+            Implemented a web crawler for the Gopher internet protocol using standard library networking imports.
+        </>,
+        technologies: [
+            {
+                src: "rust.svg",
+                alt: "Rust Logo",
+                title: "Rust icon from Simple Icons"
+            },
+        ]
     }
 ];
 
 function Projects() {
     return(
         <section id="Projects" aria-label="My Projects">
-            <Title title="Projects"/>
+            <Title title="PROJECTS"/>
+            <p className={styles.text}>A showcase of some of the projects that I have built.</p>
             <div className={styles.projects}>
                 {
                     projects.map((project, index) => (
