@@ -13,10 +13,10 @@ function ThemeButton() {
     }, []);
 
     const switchTheme = () => {
-        setIsDark(!isDark);
         const newTheme: string = isDark ? "light" : "dark";
         document.documentElement.setAttribute("theme", newTheme);
         localStorage.setItem("theme", newTheme);
+        setIsDark(!isDark);
     };
 
     const themeImgSrc: string = isDark ? "/sun.svg" : "/moon.svg";
