@@ -11,7 +11,6 @@
   --accent-tertiary:       #BF616A;
   /*--selected-filter:  invert(66%) sepia(11%) saturate(930%) hue-rotate(169deg) brightness(91%) contrast(96%);*/
   --selected-filter: invert(48%) sepia(37%) saturate(708%) hue-rotate(305deg) brightness(88%) contrast(85%);
-  background-color: var(--background-secondary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,6 +20,17 @@
 
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
+}
+
+#root {
+  background-color: var(--background-secondary);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
 }
 
 html, body {
