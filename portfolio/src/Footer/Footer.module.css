@@ -1,10 +1,11 @@
 .footer {
     background-color: var(--background-primary);
+    align-items: left;
 }
 
 .content {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     max-width: var(--content-width);
     width: 100%;
     margin: 0 auto;
@@ -12,8 +13,13 @@
 }
 
 .text {
-    color: var(--font-tertiary);
-    text-align: left;
+    color: var(--font-secondary);
     font-size: 1.2rem;
-    margin-right: 25px;
+    text-align: left;
+}
+
+.copyright {
+    color: var(--font-tertiary);
+    font-size: 1.0rem;
+    text-align: left;
 }
