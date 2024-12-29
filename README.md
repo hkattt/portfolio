@@ -3,27 +3,19 @@
 ## Overview
 This is my personal website made using Vite, React, and TypeScript
 
-## References
-- Colour palette: https://www.nordtheme.com/docs/colors-and-palettes
+## Dependencies
+TODO
 
 ## Assets
-For assets from the Noun project, read: https://help.thenounproject.com/hc/en-us/articles/200509928-How-do-I-give-creators-credit-in-my-work
-1. Cat Icon: https://www.svgrepo.com/svg/509787/cat
-2. Globe icon: https://www.svgrepo.com/svg/513157/globe-1 
+The icons used in this website were retrieved from the following sites: [Simple Icons](https://simpleicons.org/), [SVG Repo](https://www.svgrepo.com/), and [Icon Icons](https://icon-icons.com/). Each icon has a corresponding attribution if needed. 
 
-2. Simple Icons: All the skills icons are from simple icons. Check the licenses
+The website uses the [Nord Theme](https://www.nordtheme.com/docs/colors-and-palettes) colour palette.
 
-Double check license for hero icons!
-Options: Hero icons, Feather Icons, Material Icons, The Noun Project, Simple Icons
+The website uses the [Inter font](https://rsms.me/inter/).
 
-C logo: Nothing required
-C++ logo: Nothing required
-CSS logo: Nothing required
-Git logo: CC-BY-3.0
+The CodePen 
 
-Font: https://rsms.me/inter/
-
-Filter generator: https://codepen.io/sosuke/pen/Pjoqqp
+A [Codepen filter generator](https://codepen.io/sosuke/pen/Pjoqqp) was used to create filters to colour the SVG icons. 
 
 ## Inspiration
 1. Brittany Chiang: https://brittanychiang.com/
@@ -40,15 +32,11 @@ Filter generator: https://codepen.io/sosuke/pen/Pjoqqp
 11. Troy Story Games: https://www.troystorygames.com/
 12. Oluwadare Oluwaseyi: https://www.seyi.dev/
 
-More inspo: https://careerfoundry.com/en/blog/web-development/software-engineer-portfolio/ 
-
 license stuff: https://isabel-prime.github.io/
-
-
-Use PocketBase as the database???
 
 ## Look into?
 
+Use PocketBase as the database???
 Environment variables for API stuff
 
 1. Style React components using external frameworks (e.g. tailwind) or preprocessors such as SaaS
