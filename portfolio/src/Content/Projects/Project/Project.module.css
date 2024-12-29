@@ -58,6 +58,6 @@
 .technology img {
     width: 30px;
     height: 30px;
-    filter: var(--font-tertiary-filter);
+    filter: var(--accent-secondary-filter);
 }
 

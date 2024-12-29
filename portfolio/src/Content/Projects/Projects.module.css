@@ -11,7 +11,7 @@
 }
 
 .text {
-    color: var(--font-secondary);
+    color: var(--font-tertiary);
     text-align: left;
     font-size: 1.25rem;
 }
