@@ -10,12 +10,14 @@ const projects = [
             {
                 link: "https://itch.io/jam/game-off-2024/rate/3148097",
                 src: "globe.svg",
-                alt: "Globe Icon"
+                alt: "Globe Icon",
+                title: "Globe icon from SVG Repo by pixelbazaar under CC Attribution License"
             },
             {
                 link: "https://github.com/hkattt/interrogation",
                 src: "github.svg",
-                alt: "Github Logo"
+                alt: "GitHub Logo",
+                title: "GitHub icon from Simple Icons"
             },
         ],
         description: <>
@@ -24,7 +26,8 @@ const projects = [
         technologies: [
             {
                 src: "godotengine.svg",
-                alt: "Godot Engine Logo"
+                alt: "Godot Engine Logo",
+                title: "Godot Engine icon from Simple Icons under CC-BY-4.0 license"
             }
         ]
     },
@@ -34,7 +37,8 @@ const projects = [
             {
                 link: "https://github.com/hkattt/fast-paint-texture",
                 src: "github.svg",
-                alt: "Github Logo"
+                alt: "Github Logo",
+                title: "GitHub icon from Simple Icons"
             },
         ],
         description: <>
@@ -43,15 +47,18 @@ const projects = [
         technologies: [
             {
                 src: "cplusplus.svg",
-                alt: "C++ Logo"
+                alt: "C++ Logo",
+                title: "C++ icon from Simple Icons"
             },
             {
                 src: "cmake.svg",
-                alt: "CMake Logo"
+                alt: "CMake Logo",
+                title: "CMake icon from Simple Icons"
             },
             {
                 src: "linux.svg",
-                alt: "Linux Logo"
+                alt: "Linux Logo",
+                title: "Linux icon from Simple Icons"
             }
         ]
     }

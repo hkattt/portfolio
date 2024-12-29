@@ -11,12 +11,15 @@ For assets from the Noun project, read: https://help.thenounproject.com/hc/en-us
 1. Cat Icon: https://www.svgrepo.com/svg/509787/cat
 2. Globe icon: https://www.svgrepo.com/svg/513157/globe-1 
 
-Cat by Kim Sun Young from <a href="https://thenounproject.com/browse/icons/term/cat/" target="_blank" title="Cat Icons">Noun Project</a> (CC BY 3.0)
-
 2. Simple Icons: All the skills icons are from simple icons. Check the licenses
 
 Double check license for hero icons!
 Options: Hero icons, Feather Icons, Material Icons, The Noun Project, Simple Icons
+
+C logo: Nothing required
+C++ logo: Nothing required
+CSS logo: Nothing required
+Git logo: CC-BY-3.0
 
 Font: https://rsms.me/inter/
 

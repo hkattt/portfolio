@@ -6,11 +6,13 @@ interface Link {
     link: string;
     src: string;
     alt: string;
+    title: string;
 }
 
 interface Technology {
     src: string;
     alt: string;
+    title: string;
 }
 
 interface ProjectProp {
@@ -30,7 +32,7 @@ function Project({title, links, description, technologies}: ProjectProp) {
                         links.map((link, index) => (
                             <li key={index}>
                                 <a className={styles.link} href={link.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={link.src} alt={link.alt}/>
+                                    <img src={link.src} alt={link.alt} title={link.title}/>
                                 </a>
                             </li>
                         ))
@@ -42,7 +44,7 @@ function Project({title, links, description, technologies}: ProjectProp) {
                 {
                     technologies.map((technology, index) => (
                         <li className={styles.technology} key={index}>
-                            <img src={technology.src} alt={technology.alt}/>
+                            <img src={technology.src} alt={technology.alt} title={technology.title}/>
                         </li>
                     ))
                 }

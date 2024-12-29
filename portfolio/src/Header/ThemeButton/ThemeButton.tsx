@@ -20,10 +20,11 @@ function ThemeButton() {
     };
 
     const themeImgSrc: string = isDark ? "/sun.svg" : "/moon.svg";
+    const title: string = isDark ? "Sun icon from Icons8" : "Moon icon from Icon Icons by Vaadin under CC Attribution"
 
     return(
         <button className={styles.themeButton} onClick={switchTheme}>
-            <img src={themeImgSrc} alt="Theme Button"/>
+            <img src={themeImgSrc} alt="Theme Button" title={title}/>
         </button>
     )
 }

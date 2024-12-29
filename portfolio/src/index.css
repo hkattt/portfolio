@@ -3,6 +3,14 @@
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 
   --content-width: 1100px;
+  /*--accent-primary:       #5E81AC;*/
+  --accent-primary:       #BF616A;
+  /*--accent-secondary:     #81A1C1;*/
+  --accent-secondary:       #BF616A;
+  /*--accent-tertiary:      #88C0D0;*/
+  --accent-tertiary:       #BF616A;
+  /*--selected-filter:  invert(66%) sepia(11%) saturate(930%) hue-rotate(169deg) brightness(91%) contrast(96%);*/
+  --selected-filter: invert(48%) sepia(37%) saturate(708%) hue-rotate(305deg) brightness(88%) contrast(85%);
   background-color: var(--background-secondary);
 
   font-synthesis: none;
@@ -29,15 +37,11 @@ html[theme="light"] {
   --font-primary:         #2E3440;
   --font-secondary:       #3B4252;
   --font-tertiary:        #424C5E;
-  --accent-primary:       #5E81AC;
-  --accent-secondary:     #81A1C1;
-  --accent-tertiary:      #88C0D0;
+  
 
   --primary-filter:   invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
   --secondary-filter: invert(23%) sepia(19%) saturate(635%) hue-rotate(184deg) brightness(91%) contrast(87%);
   --tertiary-filter:  invert(27%) sepia(11%) saturate(1072%) hue-rotate(180deg) brightness(96%) contrast(89%);
-  --selected-filter:  invert(66%) sepia(11%) saturate(930%) hue-rotate(169deg) brightness(91%) contrast(96%);
-
 }
 
 html[theme="dark"] {
@@ -47,14 +51,10 @@ html[theme="dark"] {
   --font-primary:         #ECEFF4;
   --font-secondary:       #E5E9F0;
   --font-tertiary:        #D8DEE9;
-  --accent-primary:       #5E81AC;
-  --accent-secondary:     #81A1C1;
-  --accent-tertiary:      #88C0D0;
 
   --primary-filter:   invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
   --secondary-filter: invert(96%) sepia(4%) saturate(265%) hue-rotate(179deg) brightness(96%) contrast(97%);
   --tertiary-filter:  invert(92%) sepia(21%) saturate(270%) hue-rotate(185deg) brightness(98%) contrast(86%);
-  --selected-filter:  invert(66%) sepia(11%) saturate(930%) hue-rotate(169deg) brightness(91%) contrast(96%);
 }
 
 * {
