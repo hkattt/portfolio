@@ -46,9 +46,9 @@ html[theme="light"] {
   --background-primary:    #ECEFF4;
   --background-secondary:  #E5E9F0;
   --background-tertiary:   #D8DEE9;
-  --font-primary:          #2E3440;
+  --font-primary:          #4C566A;
   --font-secondary:        #434C5E;
-  --font-tertiary:         #4C566A;
+  --font-tertiary:         #2E3440;
   
   --font-primary-filter:    invert(20%) sepia(7%) saturate(1344%) hue-rotate(182deg) brightness(96%) contrast(96%);
   --font-secondary-filter:  invert(27%) sepia(12%) saturate(1008%) hue-rotate(182deg) brightness(94%) contrast(85%);
@@ -56,12 +56,12 @@ html[theme="light"] {
 }
 
 html[theme="dark"] {
-  --background-primary:    #2E3440;
+  --background-primary:    #4C566A;
   --background-secondary:  #434C5E;
-  --background-tertiary:   #4C566A;
-  --font-primary:          #ECEFF4;
+  --background-tertiary:   #2E3440;
+  --font-primary:          #D8DEE9;
   --font-secondary:        #E5E9F0;
-  --font-tertiary:         #D8DEE9; 
+  --font-tertiary:         #ECEFF4; 
 
   --font-primary-filter:    invert(93%) sepia(12%) saturate(70%) hue-rotate(179deg) brightness(102%) contrast(93%);
   --font-secondary-filter:  invert(92%) sepia(12%) saturate(100%) hue-rotate(179deg) brightness(98%) contrast(97%);
