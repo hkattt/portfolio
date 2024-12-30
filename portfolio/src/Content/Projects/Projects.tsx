@@ -5,6 +5,7 @@ import Project from "./Project/Project.tsx"
 const projects = [
     {
         title: "Interrogation", 
+        img: <img src="interrogation.png" alt="Interrogation art"/>,
         links: [
             {
                 link: "https://itch.io/jam/game-off-2024/rate/3148097",
@@ -32,6 +33,7 @@ const projects = [
     },
     {
         title: "Fast Paint Texture", 
+        img: <img src="fast-paint-texture.png" alt="Fast paint texture artwork"/>,
         links: [
             {
                 link: "https://github.com/hkattt/fast-paint-texture",
@@ -63,6 +65,7 @@ const projects = [
     },
     {
         title: "Gopher Web Crawler", 
+        img: <img src="interrogation.png" alt="Interrogation art"/>,
         links: [
             {
                 link: "https://github.com/hkattt/gopher-web-crawler",
@@ -88,7 +91,6 @@ function Projects() {
     return(
         <section id="Projects" aria-label="My Projects" className={styles.projects}>
             <div className={styles.content}>
-                <p className={styles.text}>A showcase of some of the projects that I have built.</p>
                 <div className={styles.projectsGrid}>
                     {
                         projects.map((project, index) => (
@@ -96,6 +98,7 @@ function Projects() {
                                 key={index} 
                                 links={project.links}
                                 title={project.title} 
+                                img={project.img}
                                 description={project.description} 
                                 technologies={project.technologies}
                             />

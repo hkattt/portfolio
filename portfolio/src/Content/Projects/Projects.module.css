@@ -7,39 +7,6 @@
 
 .projectsGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 25px;
-}
-
-@media (max-width: 850px) {
-    .projectsGrid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-.text {
-    color: var(--font-tertiary);
-    text-align: left;
-    font-size: 1.25rem;
-}
-
-.wave {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.wave {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    transition: all 0.3s ease-in-out;
-}
-
-html[theme="dark"] .wave {
-    content: url("waves/projects-bottom-dark.svg");
-}
-
-html[theme="light"] .wave {
-    content: url("waves/projects-bottom-light.svg");
 }

@@ -9,9 +9,9 @@ function Content() {
     return(
         <main id="Content" className={styles.content}>
             <Hero/>
-            <About/>
-            <Skills/>
             <Projects/>
+            <Skills/>
+            <About/>
         </main>
     )
 }
