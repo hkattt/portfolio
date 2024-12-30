@@ -1,5 +1,6 @@
 .about {
     background-color: var(--background-secondary);
+    padding-bottom: 50px;
 }
 
 .content {

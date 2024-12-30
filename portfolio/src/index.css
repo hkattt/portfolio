@@ -8,10 +8,12 @@
   --accent-primary:       #8FBCBB;
   --accent-secondary:     #88C0D0;
   --accent-tertiary:      #81A1C1;
+  --accent-quaternary:    #5E81AC;
 
-  --accent-primary-filter:   invert(72%) sepia(3%) saturate(2114%) hue-rotate(130deg) brightness(100%) contrast(89%);
-  --accent-secondary-filter: invert(80%) sepia(16%) saturate(648%) hue-rotate(147deg) brightness(89%) contrast(89%);
-  --accent-tertiary-filter:  invert(62%) sepia(62%) saturate(190%) hue-rotate(169deg) brightness(91%) contrast(85%);
+  --accent-primary-filter:    invert(72%) sepia(3%) saturate(2114%) hue-rotate(130deg) brightness(100%) contrast(89%);
+  --accent-secondary-filter:  invert(80%) sepia(16%) saturate(648%) hue-rotate(147deg) brightness(89%) contrast(89%);
+  --accent-tertiary-filter:   invert(62%) sepia(62%) saturate(190%) hue-rotate(169deg) brightness(91%) contrast(85%);
+  --accent-quaternary-filter: invert(52%) sepia(14%) saturate(1178%) hue-rotate(173deg) brightness(92%) contrast(88%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
