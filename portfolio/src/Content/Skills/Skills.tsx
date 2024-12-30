@@ -38,7 +38,6 @@ function Skills() {
                     }
                 </div>
             </div>
-            <img className={styles.wave} src="waves/skills-bottom-dark.svg" alt="Skills section bottom waves"/>
         </section>
     );
 }

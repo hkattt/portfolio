@@ -105,7 +105,6 @@ function Projects() {
                     }
                 </div>
             </div>
-            <img className={styles.wave} src="waves/projects-bottom-dark.svg" alt="Project section bottom waves"/>
         </section>
     )
 }

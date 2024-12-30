@@ -5,7 +5,6 @@ import Title from "../Title/Title.tsx"
 function About() {
     return(
         <section id="About" aria-label="About" className={styles.about}>
-            <img className={styles.wave} src="waves/hero-bottom-dark.svg" alt="Hero section bottom waves"/>
             <div className={styles.content}>
                 <Title title="About"/>
                 <p className={styles.aboutText}>

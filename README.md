@@ -17,6 +17,7 @@ The CodePen
 
 A [Codepen filter generator](https://codepen.io/sosuke/pen/Pjoqqp) was used to create filters to colour the SVG icons. 
 
+
 ## Inspiration
 1. Brittany Chiang: https://brittanychiang.com/
 2. Max Bock: https://mxb.dev/
@@ -31,6 +32,9 @@ A [Codepen filter generator](https://codepen.io/sosuke/pen/Pjoqqp) was used to c
 10. Amie Chen: https://amie-chen.com/
 11. Troy Story Games: https://www.troystorygames.com/
 12. Oluwadare Oluwaseyi: https://www.seyi.dev/
+13. Ayda OZ: https://www.aydaoz.co/
+
+https://weblium.com/blog/best-portfolio-website-examples/
 
 license stuff: https://isabel-prime.github.io/
 
