@@ -1,4 +1,28 @@
 .about {
+    background-color: var(--background-primary);
+}
+
+.container {
+    background-color: var(--background-secondary);
+}
+
+.wave {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    filter: var(--background-secondary-filter);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.aboutText{
     color: var(--font-tertiary);
     font-size: 1.25rem;
     text-align: left

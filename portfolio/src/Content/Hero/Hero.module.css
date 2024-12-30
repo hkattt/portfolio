@@ -2,6 +2,9 @@ svg {
     display: flex;
     margin: 0;
     padding: 0;
+    clip-path: inset(0 0 30% 0);
+    height: 70%;
+    overflow: hidden;
 }
 
 .hero {

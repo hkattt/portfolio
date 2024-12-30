@@ -1,4 +1,17 @@
 .skills {
+    background-color: var(--background-tertiary);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.skillsGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 25px;

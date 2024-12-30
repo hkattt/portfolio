@@ -87,21 +87,23 @@ const projects = [
 
 function Projects() {
     return(
-        <section id="Projects" aria-label="My Projects">
-            <Title title="Projects"/>
-            <p className={styles.text}>A showcase of some of the projects that I have built.</p>
-            <div className={styles.projects}>
-                {
-                    projects.map((project, index) => (
-                        <Project 
-                            key={index} 
-                            links={project.links}
-                            title={project.title} 
-                            description={project.description} 
-                            technologies={project.technologies}
-                        />
-                    ))
-                }
+        <section id="Projects" aria-label="My Projects" className={styles.projects}>
+            <div className={styles.content}>
+                <Title title="Projects"/>
+                <p className={styles.text}>A showcase of some of the projects that I have built.</p>
+                <div className={styles.projectsGrid}>
+                    {
+                        projects.map((project, index) => (
+                            <Project 
+                                key={index} 
+                                links={project.links}
+                                title={project.title} 
+                                description={project.description} 
+                                technologies={project.technologies}
+                            />
+                        ))
+                    }
+                </div>
             </div>
         </section>
     )
