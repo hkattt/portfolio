@@ -21,4 +21,13 @@
     display: flex;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+html[theme="dark"] .wave {
+    content: url("waves/hero-bottom-dark.svg");
+}
+
+html[theme="light"] .wave {
+    content: url("waves/hero-bottom-light.svg");
 }
