@@ -23,15 +23,3 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-.text {
-    color: var(--font-tertiary);
-    text-align: left;
-    font-size: 1.25rem;
-}
-
-.wave {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}

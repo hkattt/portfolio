@@ -21,7 +21,6 @@ function Skills() {
     return(
         <section id="Skills" aria-label="My Skills" className={styles.skills}>
             <div className={styles.content}>
-                <p className={styles.text}>Some of the skills and technologies that I am familiar with.</p>
                 <div className={styles.skillsGrid}>
                     {
                         skills.map((skill, index) => (
