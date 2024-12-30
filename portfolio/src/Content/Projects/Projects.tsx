@@ -1,7 +1,6 @@
 import styles from "./Projects.module.css"
 
 import Project from "./Project/Project.tsx"
-import Title from "../Title/Title.tsx"
 
 const projects = [
     {
@@ -89,7 +88,6 @@ function Projects() {
     return(
         <section id="Projects" aria-label="My Projects" className={styles.projects}>
             <div className={styles.content}>
-                <Title title="Projects"/>
                 <p className={styles.text}>A showcase of some of the projects that I have built.</p>
                 <div className={styles.projectsGrid}>
                     {
