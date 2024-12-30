@@ -19,13 +19,13 @@
 }
 
 @media (max-width: 750px) {
-    .skills {
+    .skillsGrid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 620px) {
-    .skills {
+    .skillsGrid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
