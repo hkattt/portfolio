@@ -3,18 +3,13 @@
     padding: 25px 0;
 }
 
-.content {
+.bar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: var(--content-width);
     width: 100%;
     margin: 0 auto;
     padding: 0 25px;
-}
-
-.bar {
-    display: flex;
-    flex-direction: row;
 }
 
 .socials {
@@ -35,24 +30,4 @@
 
 .themeButtonContainer {
     margin-left: auto;
-}
-
-.title {
-    color: var(--font-primary);
-    font-size: 5rem;
-    white-space: nowrap;
-    margin: 50px 0;
-}
-
-.introduction {
-    color: var(--font-tertiary);
-    font-size: 1.5rem;
-    white-space: no-wrap;
-    margin-top: 0px;
-}
-
-.email {
-    color: var(--font-tertiary);
-    font-size: 1.5rem;
-    white-space: no-wrap;
 }

@@ -1,0 +1,32 @@
+svg {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: var(--background-primary);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.title {
+    color: var(--font-primary);
+    font-size: 5rem;
+    white-space: nowrap;
+    margin: 50px 0;
+}
+
+.introduction {
+    color: var(--font-tertiary);
+    font-size: 1.5rem;
+    white-space: no-wrap;
+    margin-top: 0px;
+}

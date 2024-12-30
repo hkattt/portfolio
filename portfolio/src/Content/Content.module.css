@@ -2,10 +2,7 @@
     display: grid;
     border-radius: 25px;
     grid-template-columns: repeat(1, 1fr);
-    gap: 25px;
     margin: 0 auto auto auto;
-    padding: 25px;
-    max-width: var(--content-width);
     width: 100%;
     justify-content: center;
     align-items: center;

@@ -41,30 +41,35 @@ html, body {
 }
 
 html[theme="light"] {
-  --background-primary:   #D8DEE9;
-  --background-secondary: #E5E9F0;
-  --background-tertiary:  #ECEFF4;
-  --font-primary:         #2E3440;
-  --font-secondary:       #3B4252;
-  --font-tertiary:        #424C5E;
+  --background-primary:    #D8DEE9;
+  --background-secondary:  #E5E9F0;
+  --background-tertiary:   #ECEFF4;
+  --background-quaternary: #D8DEE9;
+  --font-primary:          #2E3440;
+  --font-secondary:        #3B4252;
+  --font-tertiary:         #424C5E;
+  --font-quaternary:       #4C566A;
   
-  --font-primary-filter:   invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
-  --font-secondary-filter: invert(23%) sepia(19%) saturate(635%) hue-rotate(184deg) brightness(91%) contrast(87%);
-  --font-tertiary-filter:  invert(27%) sepia(11%) saturate(1072%) hue-rotate(180deg) brightness(96%) contrast(89%);
+  --font-primary-filter:    invert(18%) sepia(6%) saturate(1775%) hue-rotate(182deg) brightness(95%) contrast(91%);
+  --font-secondary-filter:  invert(23%) sepia(19%) saturate(635%) hue-rotate(184deg) brightness(91%) contrast(87%);
+  --font-tertiary-filter:   invert(27%) sepia(11%) saturate(1072%) hue-rotate(180deg) brightness(96%) contrast(89%);
+  --font-quaternary-filter: invert(32%) sepia(12%) saturate(848%) hue-rotate(182deg) brightness(98%) contrast(92%);
 }
 
 html[theme="dark"] {
-  --background-primary:   #2E3440;
-  --background-secondary: #3B4252;
-  --background-tertiary:  #424C5E;
-  --font-primary:         #ECEFF4;
-  --font-secondary:       #E5E9F0;
-  --font-tertiary:        #D8DEE9; 
+  --background-primary:    #2E3440;
+  --background-secondary:  #3B4252;
+  --background-tertiary:   #424C5E;
+  --background-quaternary: #4C566A;
+  --font-primary:          #ECEFF4;
+  --font-secondary:        #E5E9F0;
+  --font-tertiary:         #D8DEE9; 
+  --font-quaternary:       #ECEFF4;
 
-  --font-primary-filter:   invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
-  --font-secondary-filter: invert(96%) sepia(4%) saturate(265%) hue-rotate(179deg) brightness(96%) contrast(97%);
-  --font-tertiary-filter:  invert(92%) sepia(21%) saturate(270%) hue-rotate(185deg) brightness(98%) contrast(86%);
-  --font-selected-filter:  invert(48%) sepia(37%) saturate(708%) hue-rotate(305deg) brightness(88%) contrast(85%);
+  --font-primary-filter:    invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
+  --font-secondary-filter:  invert(96%) sepia(4%) saturate(265%) hue-rotate(179deg) brightness(96%) contrast(97%);
+  --font-tertiary-filter:   invert(92%) sepia(21%) saturate(270%) hue-rotate(185deg) brightness(98%) contrast(86%);
+  --font-quaternary-filter: invert(98%) sepia(14%) saturate(534%) hue-rotate(176deg) brightness(99%) contrast(94%);
 }
 
 * {
