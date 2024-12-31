@@ -8,9 +8,12 @@
     padding: 25px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
     .project {
         flex-direction: column-reverse;
+    }
+    .imgContainer img {
+        width: 90%;
     }
 }
 

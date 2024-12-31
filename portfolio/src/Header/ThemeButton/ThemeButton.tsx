@@ -24,7 +24,9 @@ function ThemeButton() {
 
     return(
         <button className={styles.themeButton} onClick={switchTheme}>
-            <img src={themeImgSrc} alt="Theme Button" title={title}/>
+            <div className={styles.container}>
+                <img src={themeImgSrc} alt="Theme Button" title={title}/>
+            </div>
         </button>
     )
 }

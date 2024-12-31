@@ -1,7 +1,6 @@
 import styles from "./Content.module.css"
 
 import Hero from "./Hero/Hero.tsx"
-import About from "./About/About.tsx"
 import Skills from "./Skills/Skills.tsx"
 import Projects from './Projects/Projects.tsx'
 
@@ -11,7 +10,6 @@ function Content() {
             <Hero/>
             <Projects/>
             <Skills/>
-            <About/>
         </main>
     )
 }

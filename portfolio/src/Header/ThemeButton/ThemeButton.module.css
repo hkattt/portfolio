@@ -5,6 +5,14 @@
     cursor: pointer;
 }
 
+.container {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--background-secondary);
+    box-shadow: var(--background-tertiary) 0px 3px 6px 0px;
+}
+
 .themeButton img {
     width: 30px;
     height: 30px;
