@@ -6,7 +6,11 @@ function Hero() {
         <section id="Hero" aria-label="Hero" className={styles.hero}>
             <div className={styles.content}>
                 <div className={styles.information}>
-                    <h1 className={styles.title}>Hey! I'm Hugo Kat <br/>Software Engineer</h1>
+                    <h1 className={styles.title}>
+                        Hey! I'm <span className={styles.name}>Hugo Kat</span>
+                        <br/>
+                        Software Engineer
+                    </h1>
                     <div className={styles.socials}>
                         <a className={styles.social} href="mailto:hugo.kat3@gmail.com">
                             <img className={styles.icon} src="email.svg" alt="Email Icon" title="Email icon from Simple Icons"/>
