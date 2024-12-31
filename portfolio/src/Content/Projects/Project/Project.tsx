@@ -4,9 +4,7 @@ import styles from "./Project.module.css"
 
 interface Link {
     link: string;
-    src: string;
-    alt: string;
-    title: string;
+    text: string;
 }
 
 interface Technology {
@@ -26,23 +24,24 @@ interface ProjectProp {
 function Project({title, img, links, description, technologies}: ProjectProp) {
     return(
         <div className={styles.project}>
-            <div className={styles.imgContainer}>{img}</div>
+            {
+                img != null ? <div className={styles.imgContainer}>{img}</div> : <><></></>
+            }
             <div className={styles.content}>
-                <div className={styles.header}>
-                    <h3 className={styles.title}>{title}</h3>
-                    <ul className={styles.links}>
+                <h3 className={styles.title}>{title}</h3>
+                <p className={styles.description}>{description}</p>
+                <ul className={styles.links}>
                         {
                             links.map((link, index) => (
                                 <li key={index}>
                                     <a className={styles.link} href={link.link} target="_blank" rel="noopener noreferrer">
-                                        <img src={link.src} alt={link.alt} title={link.title}/>
+                                        <p>{link.text}</p>
+                                        <img src="redirect.svg" alt="Globe Icon"/>
                                     </a>
                                 </li>
                             ))
                         }
                     </ul>
-                </div>
-                <p className={styles.description}>{description}</p>
                 <ul className={styles.technologies}>
                     {
                         technologies.map((technology, index) => (

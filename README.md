@@ -13,10 +13,9 @@ The website uses the [Nord Theme](https://www.nordtheme.com/docs/colors-and-pale
 
 The website uses the [Inter font](https://rsms.me/inter/).
 
-The CodePen 
-
 A [Codepen filter generator](https://codepen.io/sosuke/pen/Pjoqqp) was used to create filters to colour the SVG icons. 
 
+Redirect icon: https://icon-icons.com/icon/external-link/151370
 
 ## Inspiration
 1. Brittany Chiang: https://brittanychiang.com/
