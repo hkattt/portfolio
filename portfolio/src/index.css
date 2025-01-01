@@ -3,7 +3,7 @@
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 
-  --content-width: 1000px;
+  --content-width: 1100px;
 
   --accent-primary:       #8FBCBB;
   --accent-secondary:     #88C0D0;
