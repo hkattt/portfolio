@@ -69,7 +69,6 @@
 }
 
 .linkButton {
-    all: unset;
     display: flex;
     flex-direction: row;
     gap: 10px;

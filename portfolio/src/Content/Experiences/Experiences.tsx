@@ -9,8 +9,8 @@ const experiences = [
         organisation: "GovTEAMS", 
         organisationLink: "https://www.govteams.gov.au/",
         description: <>
-            Worked as a digital cadet at GovTEAMS
-            UPDATE UPDATE
+            Working as a junior full-stack developer contributing to the React frontend and .NET backend. 
+            TODO UPDATE
         </>,
         technologies: [
             {
@@ -31,8 +31,8 @@ const experiences = [
         organisation: "DEWR",
         organisationLink: "https://www.dewr.gov.au/",
         description: <>
-            Worked as a service desk agent at GovTEAMS
-            UPDATE UPDATE
+            Assisted DEWR employees with their IT issues via the phone and text chat. Directed external clients to the appropriate line while operating
+            the switchboard. Trained new service desk employees. 
         </>,
         technologies: []
     },
