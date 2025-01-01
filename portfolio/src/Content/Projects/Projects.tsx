@@ -9,11 +9,17 @@ const projects = [
         links: [
             {
                 link: "https://itch.io/jam/game-off-2024/rate/3148097",
-                text: "View Online"
+                text: "View Online",
+                src: "globe.svg",
+                alt: "Globe Icon",
+                title: "Globe icon from SVG Repo by pixelbazaar under CC Attribution License"
             },
             {
                 link: "https://github.com/hkattt/interrogation",
-                text: "View GitHub"
+                text: "View GitHub",
+                src: "github.svg",
+                alt: "GitHub Logo",
+                title: "GitHub icon from Simple Icons"
             },
         ],
         description: <>
@@ -33,7 +39,10 @@ const projects = [
         links: [
             {
                 link: "https://github.com/hkattt/fast-paint-texture",
-                text: "View GitHub"
+                text: "View GitHub",
+                src: "github.svg",
+                alt: "Github Logo",
+                title: "GitHub icon from Simple Icons"
             },
         ],
         description: <>
@@ -63,7 +72,10 @@ const projects = [
         links: [
             {
                 link: "https://github.com/hkattt/gopher-web-crawler",
-                text: "View GitHub"
+                text: "View GitHub",
+                src: "github.svg",
+                alt: "Github Logo",
+                title: "GitHub icon from Simple Icons"
             },
         ],
         description: <>
