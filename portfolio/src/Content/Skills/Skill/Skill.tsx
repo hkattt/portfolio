@@ -10,7 +10,9 @@ interface SkillProp {
 function Skill({image, alt, text, title}: SkillProp) {
     return(
         <div className={styles.skill}>
-            <img className={styles.skillImg} src={image} alt={alt} title={title}/>
+            <div className={styles.container}>
+                <img className={styles.img} src={image} alt={alt} title={title}/>
+            </div>
             <p className={styles.skillText}>{text}</p>
         </div>
     )

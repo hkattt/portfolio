@@ -1,12 +1,6 @@
-.skills {
-    background-color: var(--background-secondary);
-}
-
 .content {
     display: flex;
     flex-direction: column;
-    max-width: var(--content-width);
-    width: 100%;
     margin: 0 auto;
     padding: 0 25px;
 }
@@ -28,31 +22,4 @@
     .skillsGrid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-.text {
-    color: var(--font-tertiary);
-    text-align: left;
-    font-size: 1.25rem;
-}
-
-.wave {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.wave {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    transition: all 0.3s ease-in-out;
-}
-
-html[theme="dark"] .wave {
-    content: url("waves/skills-bottom-dark.svg");
-}
-
-html[theme="light"] .wave {
-    content: url("waves/skills-bottom-light.svg");
 }

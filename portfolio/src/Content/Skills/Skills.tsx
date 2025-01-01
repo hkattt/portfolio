@@ -1,7 +1,6 @@
 import styles from "./Skills.module.css"
 
 import Skill from "./Skill/Skill.tsx"
-import Title from "../Title/Title.tsx"
 
 const skills = [
     {image: "react.svg",       alt: "React Logo",        text: "React",        title: "React icon from Simple Icons"},
@@ -22,8 +21,6 @@ function Skills() {
     return(
         <section id="Skills" aria-label="My Skills" className={styles.skills}>
             <div className={styles.content}>
-                <Title title="Skills"/>
-                <p className={styles.text}>Some of the skills and technologies that I am familiar with.</p>
                 <div className={styles.skillsGrid}>
                     {
                         skills.map((skill, index) => (
@@ -38,7 +35,6 @@ function Skills() {
                     }
                 </div>
             </div>
-            <img className={styles.wave} src="waves/skills-bottom-dark.svg" alt="Skills section bottom waves"/>
         </section>
     );
 }

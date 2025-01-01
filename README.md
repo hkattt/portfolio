@@ -13,9 +13,9 @@ The website uses the [Nord Theme](https://www.nordtheme.com/docs/colors-and-pale
 
 The website uses the [Inter font](https://rsms.me/inter/).
 
-The CodePen 
-
 A [Codepen filter generator](https://codepen.io/sosuke/pen/Pjoqqp) was used to create filters to colour the SVG icons. 
+
+Redirect icon: https://icon-icons.com/icon/external-link/151370
 
 ## Inspiration
 1. Brittany Chiang: https://brittanychiang.com/
@@ -31,6 +31,9 @@ A [Codepen filter generator](https://codepen.io/sosuke/pen/Pjoqqp) was used to c
 10. Amie Chen: https://amie-chen.com/
 11. Troy Story Games: https://www.troystorygames.com/
 12. Oluwadare Oluwaseyi: https://www.seyi.dev/
+13. Ayda OZ: https://www.aydaoz.co/
+
+https://weblium.com/blog/best-portfolio-website-examples/
 
 license stuff: https://isabel-prime.github.io/
 

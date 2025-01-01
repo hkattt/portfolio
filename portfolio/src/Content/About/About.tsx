@@ -1,13 +1,9 @@
 import styles from "./About.module.css"
 
-import Title from "../Title/Title.tsx"
-
 function About() {
     return(
         <section id="About" aria-label="About" className={styles.about}>
-            <img className={styles.wave} src="waves/hero-bottom-dark.svg" alt="Hero section bottom waves"/>
             <div className={styles.content}>
-                <Title title="About"/>
                 <p className={styles.aboutText}>
                     I'm an aspiring software engineer with a passion for learning new technologies and skills. I love unpacking complex computer systems to understand their inner workings. Currently, 
                     I am working as a Junior Software Engineer at <a href="https://www.govteams.gov.au/" target="_blank" rel="noopener noreferrer">GovTEAMS</a>, contributing to front-end and 

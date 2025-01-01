@@ -1,20 +1,22 @@
 import styles from "./Projects.module.css"
 
 import Project from "./Project/Project.tsx"
-import Title from "../Title/Title.tsx"
 
 const projects = [
     {
         title: "Interrogation", 
+        img: <img src="interrogation.png" alt="Interrogation art"/>,
         links: [
             {
                 link: "https://itch.io/jam/game-off-2024/rate/3148097",
+                text: "View Online",
                 src: "globe.svg",
                 alt: "Globe Icon",
                 title: "Globe icon from SVG Repo by pixelbazaar under CC Attribution License"
             },
             {
                 link: "https://github.com/hkattt/interrogation",
+                text: "View GitHub",
                 src: "github.svg",
                 alt: "GitHub Logo",
                 title: "GitHub icon from Simple Icons"
@@ -33,9 +35,11 @@ const projects = [
     },
     {
         title: "Fast Paint Texture", 
+        img: <img src="fast-paint-texture.png" alt="Fast paint texture artwork"/>,
         links: [
             {
                 link: "https://github.com/hkattt/fast-paint-texture",
+                text: "View GitHub",
                 src: "github.svg",
                 alt: "Github Logo",
                 title: "GitHub icon from Simple Icons"
@@ -64,9 +68,11 @@ const projects = [
     },
     {
         title: "Gopher Web Crawler", 
+        img: null,
         links: [
             {
                 link: "https://github.com/hkattt/gopher-web-crawler",
+                text: "View GitHub",
                 src: "github.svg",
                 alt: "Github Logo",
                 title: "GitHub icon from Simple Icons"
@@ -89,8 +95,6 @@ function Projects() {
     return(
         <section id="Projects" aria-label="My Projects" className={styles.projects}>
             <div className={styles.content}>
-                <Title title="Projects"/>
-                <p className={styles.text}>A showcase of some of the projects that I have built.</p>
                 <div className={styles.projectsGrid}>
                     {
                         projects.map((project, index) => (
@@ -98,6 +102,7 @@ function Projects() {
                                 key={index} 
                                 links={project.links}
                                 title={project.title} 
+                                img={project.img}
                                 description={project.description} 
                                 technologies={project.technologies}
                             />
@@ -105,7 +110,6 @@ function Projects() {
                     }
                 </div>
             </div>
-            <img className={styles.wave} src="waves/projects-bottom-dark.svg" alt="Project section bottom waves"/>
         </section>
     )
 }
