@@ -18,6 +18,7 @@
 .header {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 .jobTitle {
@@ -71,4 +72,35 @@
     color: var(--font-primary);
     font-size: 1.25rem;
     margin: 0;
+}
+
+
+.technologies {
+    display: flex;
+    margin-top: auto;
+    gap: 20px;
+}
+
+.technology img {
+    width: 30px;
+    height: 30px;
+    filter: var(--font-secondary-filter);
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+    }
+    
+    .date {
+        margin-left: 0px;
+    }
+
+    .jobTitle {
+        font-size: 1.6rem;
+    }
+
+    .organisation {
+        font-size: 1.3rem;
+    }
 }

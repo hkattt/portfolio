@@ -12,16 +12,29 @@ const experiences = [
             Worked as a digital cadet at GovTEAMS
             UPDATE UPDATE
         </>,
+        technologies: [
+            {
+                src: "dotnet.svg",
+                alt: ".NET Logo",
+                title: ".NET icon from Simple Icons under CC0-1.0"
+            },
+            {
+                src: "react.svg",
+                alt: "React Logo",
+                title: "React icon from Simple Icons"
+            },
+        ]
     },
     {
         jobTitle: "IT Service Desk Agent", 
         date: "Feb 2023 - Feb 2024",
-        organisation: "Department of Employment and Workplace Relations",
+        organisation: "DEWR",
         organisationLink: "https://www.dewr.gov.au/",
         description: <>
             Worked as a service desk agent at GovTEAMS
             UPDATE UPDATE
         </>,
+        technologies: []
     },
 ];
 
@@ -39,6 +52,7 @@ function Experiences() {
                                 organisation={experience.organisation}
                                 organisationLink={experience.organisationLink}
                                 description={experience.description} 
+                                technologies={experience.technologies}
                             />
                         ))
                     }

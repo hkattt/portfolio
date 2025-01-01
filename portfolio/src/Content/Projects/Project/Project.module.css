@@ -99,6 +99,10 @@
     background-color: var(--background-secondary);
     cursor: pointer;
 
+    p {
+        color: var(--accent-primary);
+    }
+
     img {
         display: flex;
     }
@@ -133,12 +137,17 @@
     .imgContainer img {
         height: 250px;
     }
+
+    .title {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 750px) {
     .project {
         flex-direction: column-reverse;
     }
+
     .imgContainer img {
         display: none;
     }
