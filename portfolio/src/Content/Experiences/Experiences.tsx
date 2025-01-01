@@ -9,8 +9,7 @@ const experiences = [
         organisation: "GovTEAMS", 
         organisationLink: "https://www.govteams.gov.au/",
         description: <>
-            Working as a junior full-stack developer contributing to the React frontend and .NET backend. 
-            TODO UPDATE
+            I am currently working as a junior software developer contributing to the React frontend and .NET backend. 
         </>,
         technologies: [
             {
@@ -31,8 +30,7 @@ const experiences = [
         organisation: "DEWR",
         organisationLink: "https://www.dewr.gov.au/",
         description: <>
-            Assisted DEWR employees with their IT issues via the phone and text chat. Directed external clients to the appropriate line while operating
-            the switchboard. Trained new service desk employees. 
+            Assisted internal employees with their IT issues, directed external clients to the appropriate line while operating the switchboard, and trained new service desk agents. 
         </>,
         technologies: []
     },
