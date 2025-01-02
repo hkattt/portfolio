@@ -22,6 +22,11 @@ const experiences = [
                 alt: "React Logo",
                 title: "React icon from Simple Icons"
             },
+            {
+                src: "figma.svg",
+                alt: "Figma Logo",
+                title: "Figma icon from Simple Icons"
+            }
         ]
     },
     {
