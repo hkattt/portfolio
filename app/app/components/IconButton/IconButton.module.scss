@@ -15,6 +15,7 @@
         cursor: pointer;
         
         img {
+            filter: var(--accent-primary-filter);
             scale: 1.1;
         }
     }
