@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import Image from "next/image";
 import IconButton from "../IconButton/IconButton";
 
 import styles from "./Hero.module.scss";
@@ -8,32 +9,32 @@ const Hero = () => {
     <div className={styles.container}>
         <div>
             <h1>
-                Hey! I'm <span>Hugo Kat </span>
+                Hey! I&apos;m <span>Hugo Kat </span>
                 <br />
                 Software Engineer
             </h1>
             <span>
                 <IconButton
                     link="mailto:hugo.kat3@gmail.com"
-                    src="email.svg"
+                    src="/email.svg"
                     alt="Email Icon"
                 >
                 </IconButton>
                 <IconButton
                     link="https://github.com/hkattt"
-                    src="github.svg"
+                    src="/github.svg"
                     alt="GitHub Icon"
                 >
                 </IconButton>
                 <IconButton
                     link="https://www.linkedin.com/in/hugo-kat/"
-                    src="linkedin.svg"
+                    src="/linkedin.svg"
                     alt="LinkedIn Icon"
                 >
                 </IconButton>
             </span>
         </div>
-        <img className={styles.picture} src="hugo.png" alt="Hugo Profile Picture"/>
+        <Image className={styles.picture} src="/hugo.png" alt="Hugo Profile Picture" width={0} height={0} sizes="100vw" style={{width: "100%", height: "auto"}}/>
     </div>
   )
 }
