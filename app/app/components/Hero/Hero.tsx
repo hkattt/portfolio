@@ -18,18 +18,24 @@ const Hero = () => {
                         link="mailto:hugo.kat3@gmail.com"
                         src="/email.svg"
                         alt="Email Icon"
+                        width={35}
+                        height={35}
                     >
                     </IconButton>
                     <IconButton
                         link="https://github.com/hkattt"
                         src="/github.svg"
                         alt="GitHub Icon"
+                        width={30}
+                        height={30}
                     >
                     </IconButton>
                     <IconButton
                         link="https://www.linkedin.com/in/hugo-kat/"
                         src="/linkedin.svg"
                         alt="LinkedIn Icon"
+                        width={30}
+                        height={30}
                     >
                     </IconButton>
                 </span>

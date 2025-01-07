@@ -8,12 +8,14 @@ interface IconButtonProps {
   link: string;
   src: string;
   alt: string;
+  width: number;
+  height: number;
 }
 
-const IconButton = ({link, src, alt}: IconButtonProps) => {
+const IconButton = ({link, src, alt, width, height}: IconButtonProps) => {
   return (
     <Link className={styles.container} href={link} target="_blank" rel="noopener noreferrer">
-      <Image src={src} alt={alt} width={30} height={30} style={{objectFit: "cover"}}/>
+      <Image src={src} alt={alt} width={width} height={height} style={{objectFit: "cover"}}/>
     </Link>
   )
 }
