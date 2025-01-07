@@ -4,23 +4,27 @@ import TechnologyPill from "../TechnologyPill/TechnologyPill";
 
 import styles from "./Experience.module.scss";
 
+interface Organisation {
+    title: string;
+    href: string;
+}
+
 interface ExperienceProps {
     title: string;
     date: string;
-    organisation: string;
-    organisationLink: string;
+    organisation: Organisation
     description: string;
     technologies: string[];
 }
 
-const Experience = ({title, date, organisation, organisationLink, description, technologies}: ExperienceProps) => {
+const Experience = ({title, date, organisation, description, technologies}: ExperienceProps) => {
   return (
     <div className={styles.experience}>
         <div className={styles.header}>
             <h3>{title}</h3>
             <p className={styles.date}>{date}</p>
         </div>
-        <RedirectLink title={organisation} link={organisationLink}></RedirectLink>
+        <RedirectLink title={organisation.title} href={organisation.href}></RedirectLink>
         <p className={styles.description}>{description}</p>
         <div className={styles.technologies}>
             {

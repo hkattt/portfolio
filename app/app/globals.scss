@@ -17,6 +17,8 @@
   --body-bold: 700 16px/20px var(--font-inter);
   --body: 400 16px/20px var(--font-inter);
   --small: 400 14px/18px var(--font-inter);
+
+  --outline: 2px solid var(--background-tertiary);
 }
 
 @media (prefers-color-scheme: dark) {

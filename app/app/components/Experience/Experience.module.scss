@@ -1,10 +1,10 @@
 .experience {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.8rem;
     background-color: var(--background-secondary);
     border-radius: 5px;
-    outline: 2px solid var(--background-tertiary);
+    outline: var(--outline);
     padding: 1rem;
 
     .header {
