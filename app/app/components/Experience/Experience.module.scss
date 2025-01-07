@@ -1,0 +1,28 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--background-secondary);
+    border-radius: 5px;
+    padding: 1rem;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+
+        .date {
+            margin-left: auto;
+            font: var(--small);
+        }
+    }
+
+    .description {
+        font: var(--body);
+    }
+
+    .technologies {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+}

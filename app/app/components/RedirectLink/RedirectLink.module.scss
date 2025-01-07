@@ -1,0 +1,22 @@
+.link {
+    display: inline-flex;
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    p {
+        font: var(--large);
+    }
+
+    &:hover {
+        p {
+            color: var(--accent-primary);
+        }
+
+        img {
+            transform: translateX(0.25rem) translateY(-0.25rem);
+        }
+    }
+}
