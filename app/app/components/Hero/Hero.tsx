@@ -6,8 +6,7 @@ import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <section id="Hero" aria-label="Hero">
-        <div className={styles.container}>
+    <section className={styles.hero}id="Hero" aria-label="Hero">
             <div>
                 <h1>
                     Hey! I&apos;m <span>Hugo Kat </span>
@@ -36,7 +35,6 @@ const Hero = () => {
                 </span>
             </div>
             <Image className={styles.picture} src="/hugo.png" alt="Hugo Profile Picture" width={0} height={0} sizes="100vw" style={{width: "100%", height: "auto"}}/>
-        </div>
     </section>
   )
 }
