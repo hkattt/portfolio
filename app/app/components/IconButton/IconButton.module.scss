@@ -1,0 +1,19 @@
+.container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 5px;
+    outline: 2px solid var(--background-tertiary);
+    width: 40px;
+    height: 40px;
+    padding: 7.5px;
+
+    &:hover {
+        cursor: pointer;
+        
+        img {
+            scale: 1.1;
+        }
+    }
+}
