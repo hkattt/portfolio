@@ -14,8 +14,3 @@ export interface Link {
     title: string;
     href: string;
 }
-
-export interface Skill {
-    image: Image;
-    name: string;
-}

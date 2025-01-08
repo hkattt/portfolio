@@ -1,5 +1,5 @@
 import Hero from "./components/Hero/Hero";
-import Project from "./components/Project/Project";
+import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
@@ -11,29 +11,54 @@ export default function Main() {
     <>
       <main className={styles.portfolio}>
         <Hero></Hero>
-        <Project
-          image={{
-            src: "/interrogation.png",
-            alt: "Interrogation background art",
-            width: 0,
-            height: 0
-          }}
-          title="Interrogation"
-          description="Created a murder-mystery game called Interrogation for GitHub Game Off 2024."
-          links={[
+        <Projects
+          projects={[
             {
-              title: "Play Online",
-              href: "https://itch.io/jam/game-off-2024/rate/3148097"
+              image: {
+                src: "/interrogation.png",
+                alt: "Interrogation background art",
+                width: 0,
+                height: 0
+              },
+              title: "Interrogation",
+              description: "Created a murder-mystery game called Interrogation for GitHub Game Off 2024.",
+              links: [
+                {
+                  title: "Play Online",
+                  href: "https://itch.io/jam/game-off-2024/rate/3148097"
+                },
+                {
+                  title: "View GitHub",
+                  href: "https://github.com/hkattt/interrogation"
+                }
+              ],
+              technologies: [
+                "Godot Engine"
+              ]
             },
             {
-              title: "View GitHub",
-              href: "https://github.com/hkattt/interrogation"
+              image: {
+                src: "/fast-paint-texture.png",
+                alt: "Fast paint texture artwork",
+                width: 0,
+                height: 0
+              },
+              title: "Fast Paint Texture",
+              description: "Reimplemented Aaron Hertzmann's Fast Paint Texture algorithm. The program generates images with a hand-painted appearance from a provided source image.",
+              links: [
+                {
+                  title: "View GitHub",
+                  href: "https://github.com/hkattt/fast-paint-texture"
+                }
+              ],
+              technologies: [
+                "C++",
+                "CMake",
+                "Linux"
+              ]
             }
           ]}
-          technologies={[
-            "Godot Engine"
-          ]}
-        ></Project>
+        ></Projects>
         <Skills
           skills={[
             {

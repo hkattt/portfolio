@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import { Image, Organisation, Link, Skill } from "./common";
+import { Image, Organisation, Link } from "./common";
 
 export interface IconButtonProps {
     image: Image;
@@ -13,6 +13,10 @@ export interface RedirectLinkProps {
 
 export interface TechnologyPillProps {
     name: string;
+}
+
+export interface ProjectsProps {
+    projects: ProjectProps[];
 }
 
 export interface ProjectProps {
@@ -32,7 +36,7 @@ export interface ExperienceProps {
 }
 
 export interface SkillsProps {
-    skills: Skill[];
+    skills: SkillProps[];
 }
 
 export interface SkillProps {

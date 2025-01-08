@@ -8,7 +8,7 @@ import { SkillsProps } from "@/app/types/props";
 const Skills = ({skills}: SkillsProps) => {
   return (
     <div className={styles.skills}>
-        <h2>Skills</h2>
+        <h2>My Skills</h2>
         <div>
             {
                 skills.map((skill, index) => (

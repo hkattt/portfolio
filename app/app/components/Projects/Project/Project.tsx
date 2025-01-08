@@ -1,6 +1,6 @@
 import Image from "next/image";
-import RedirectLink from "../RedirectLink/RedirectLink";
-import TechnologyPill from "../TechnologyPill/TechnologyPill";
+import RedirectLink from "../../RedirectLink/RedirectLink";
+import TechnologyPill from "../../TechnologyPill/TechnologyPill";
 
 import styles from "./Project.module.scss";
 
