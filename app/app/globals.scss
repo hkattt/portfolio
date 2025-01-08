@@ -1,0 +1,94 @@
+:root {
+  --background-primary:   #ECEFF4;
+  --background-secondary: #E5E9F0;
+  --background-tertiary:  #D8DEE9;
+  --font-primary:         #2E3440;
+  --accent-primary:       #8FBCBB;
+
+  --font-primary-filter:   invert(20%) sepia(7%) saturate(1344%) hue-rotate(182deg) brightness(96%) contrast(96%);
+  --accent-primary-filter: invert(72%) sepia(3%) saturate(2114%) hue-rotate(130deg) brightness(100%) contrast(89%);
+
+  --content-width: 1024px;
+
+  --h1: 700 48px/57px var(--font-inter);
+  --h2: 600 32px/38px var(--font-inter);
+  --h3: 600 24px/31px var(--font-inter);
+  --large: 500 20px/26px var(--font-inter);
+  --body-bold: 700 16px/20px var(--font-inter);
+  --body: 400 16px/20px var(--font-inter);
+  --small: 400 14px/18px var(--font-inter);
+
+  --outline: 2px solid var(--background-tertiary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-primary:   #2E3440;
+    --background-secondary: #3B4252;
+    --background-tertiary:  #434C5E;
+    --font-primary:         #ECEFF4;
+    --accent-primary:       #81A1C1;
+
+    --font-primary-filter:   invert(96%) sepia(5%) saturate(170%) hue-rotate(179deg) brightness(97%) contrast(99%);
+    --accent-primary-filter: invert(76%) sepia(11%) saturate(1129%) hue-rotate(172deg) brightness(83%) contrast(78%);
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--font-primary);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: color 0.3s ease-in-out, 
+            background-color 0.3s ease-in-out, 
+            border-color 0.3s ease-in-out, 
+            filter 0.3s ease-in-out, 
+            box-shadow 0.3s ease-in-out, 
+            transform 0.3s ease-in-out,
+            scale 0.3s ease-in-out;
+}
+
+a {
+  font: var(--body-bold);
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent-primary);
+  }
+}
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

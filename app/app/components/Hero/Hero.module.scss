@@ -1,0 +1,42 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+
+    div {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+
+            span {
+                color: var(--accent-primary);
+            }
+        }
+        
+        span {
+            display: inline-flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+    }
+    
+    .picture {
+        border-radius: 5px;
+        outline: var(--outline);
+    }
+}
+
+@media (max-width: 850px) {
+    .hero {
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.5fr 0.25fr;
+    }
+}

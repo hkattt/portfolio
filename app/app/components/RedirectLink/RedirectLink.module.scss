@@ -1,0 +1,28 @@
+.link {
+    display: inline-flex;
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.3rem;
+
+    p {
+        font: var(--large);
+        white-space: nowrap;
+    }
+
+    img {
+        filter: var(--font-primary-filter);
+    }
+
+    &:hover {
+        p {
+            color: var(--accent-primary);
+        }
+
+        img {
+            filter: var(--accent-primary-filter);
+            transform: translateX(0.25rem) translateY(-0.25rem);
+        }
+    }
+}

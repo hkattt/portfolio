@@ -1,0 +1,11 @@
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

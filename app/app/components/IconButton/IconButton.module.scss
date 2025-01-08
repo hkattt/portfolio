@@ -1,0 +1,22 @@
+.container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 5px;
+    outline: var(--outline);
+    padding: 7.5px;
+
+    img {
+        filter: var(--font-primary-filter);
+    }
+
+    &:hover {
+        cursor: pointer;
+        
+        img {
+            filter: var(--accent-primary-filter);
+            scale: 1.1;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.skill {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    
+    span {
+        background-color: var(--background-secondary);
+        border-radius: 5px;
+        padding: 0.5rem;
+        outline: var(--outline);
+
+        img {
+            filter: var(--font-primary-filter);
+        }
+    }
+
+    p {
+        font: var(--body);
+        text-align: center;
+    }
+}

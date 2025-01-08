@@ -4,10 +4,15 @@
 This is my personal website made using Vite, React, and TypeScript
 
 ## Dependencies
-TODO
+- Node
+- NextJS
+- SaSS
+- Next Fonts
 
 ## Assets
 The icons used in this website were retrieved from the following sites: [Simple Icons](https://simpleicons.org/), [SVG Repo](https://www.svgrepo.com/), and [Icon Icons](https://icon-icons.com/). Each icon has a corresponding attribution if needed. 
+
+The website used the [Google Material Icons](https://fonts.google.com/icons). 
 
 The website uses the [Nord Theme](https://www.nordtheme.com/docs/colors-and-palettes) colour palette.
 
@@ -15,7 +20,7 @@ The website uses the [Inter font](https://rsms.me/inter/).
 
 A [Codepen filter generator](https://codepen.io/sosuke/pen/Pjoqqp) was used to create filters to colour the SVG icons. 
 
-Redirect icon: https://icon-icons.com/icon/external-link/151370
+TODO: Figure out how to reference all of these
 
 ## Inspiration
 1. Brittany Chiang: https://brittanychiang.com/

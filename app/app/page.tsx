@@ -1,0 +1,204 @@
+import Hero from "./components/Hero/Hero";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
+import Experiences from "./components/Experiences/Experiences";
+import Footer from "./components/Footer/Footer";
+
+import styles from "./page.module.scss";
+
+export default function Main() {
+  return (
+    <>
+      <main className={styles.portfolio}>
+        <Hero></Hero>
+        <Projects
+          projects={[
+            {
+              image: {
+                src: "/interrogation.png",
+                alt: "Interrogation background art",
+                width: 0,
+                height: 0
+              },
+              title: "Interrogation",
+              description: "Created a murder-mystery game called Interrogation for GitHub Game Off 2024.",
+              links: [
+                {
+                  title: "Play Online",
+                  href: "https://itch.io/jam/game-off-2024/rate/3148097"
+                },
+                {
+                  title: "View GitHub",
+                  href: "https://github.com/hkattt/interrogation"
+                }
+              ],
+              technologies: [
+                "Godot Engine"
+              ]
+            },
+            {
+              image: {
+                src: "/fast-paint-texture.png",
+                alt: "Fast paint texture artwork",
+                width: 0,
+                height: 0
+              },
+              title: "Fast Paint Texture",
+              description: "Reimplemented Aaron Hertzmann's Fast Paint Texture algorithm. The program generates images with a hand-painted appearance from a provided source image.",
+              links: [
+                {
+                  title: "View GitHub",
+                  href: "https://github.com/hkattt/fast-paint-texture"
+                }
+              ],
+              technologies: [
+                "C++",
+                "CMake",
+                "Linux"
+              ]
+            }
+          ]}
+        ></Projects>
+        <Skills
+          skills={[
+            {
+              image: {
+                src: "/react.svg",
+                alt: "React Icon",
+                width: 55,
+                height: 55
+              },
+              name: "React"
+            },
+            {
+              image: {
+                src: "/dotnet.svg",
+                alt: ".NET Icon",
+                width: 55,
+                height: 55
+              },
+              name: ".NET"
+            },
+            {
+              image: {
+                src: "/html5.svg",
+                alt: "HTML5 Icon",
+                width: 55,
+                height: 55
+              },
+              name: "HTML"
+            },
+            {
+              image: {
+                src: "/css3.svg",
+                alt: "CSS3 Icon",
+                width: 55,
+                height: 55
+              },
+              name: "CSS"
+            },
+            {
+              image: {
+                src: "/c.svg",
+                alt: "C Icon",
+                width: 55,
+                height: 55
+              },
+              name: "C"
+            },
+            {
+              image: {
+                src: "/cplusplus.svg",
+                alt: "C++ Icon",
+                width: 55,
+                height: 55
+              },
+              name: "C++"
+            },
+            {
+              image: {
+                src: "/java.svg",
+                alt: "Java Icon",
+                width: 55,
+                height: 55
+              },
+              name: "Java"
+            },
+            {
+              image: {
+                src: "/python.svg",
+                alt: "Python Icon",
+                width: 55,
+                height: 55
+              },
+              name: "Python"
+            },
+            {
+              image: {
+                src: "/rust.svg",
+                alt: "Rust Icon",
+                width: 55,
+                height: 55
+              },
+              name: "Rust"
+            },
+            {
+              image: {
+                src: "/git.svg",
+                alt: "Git Icon",
+                width: 55,
+                height: 55
+              },
+              name: "Git"
+            },
+            {
+              image: {
+                src: "/linux.svg",
+                alt: "Linux Icon",
+                width: 55,
+                height: 55
+              },
+              name: "Linux"
+            },
+            {
+              image: {
+                src: "/godotengine.svg",
+                alt: "Godot Engine Icon",
+                width: 55,
+                height: 55
+              },
+              name: "Godot"
+            }
+          ]}
+        ></Skills>
+        <Experiences
+          experiences={[
+            {
+              title: "Digital Cadet",
+              date: "Oct 2024 - Present",
+              organisation: {
+                title: "GovTEAMS",
+                href: "https://www.govteams.gov.au/"
+              },
+              description: "I am currently working as a junior software developer contributing to the React frontend and .NET backend.",
+              technologies: [
+                ".NET", "React", "Azure", "Figma"
+              ]
+            },
+            {
+              title: "IT Service Desk Agent",
+              date: "Feb 2023 - Feb 2024",
+              organisation: {
+                title: "DEWR",
+                href: "https://www.dewr.gov.au/"
+              },
+              description: "Assisted internal employees with their IT issues, directed external clients to the appropriate line while operating the switchboard, and trained new service desk agents.",
+              technologies: []
+            }
+          ]}
+        ></Experiences>
+      </main> 
+      <Footer></Footer>
+    </>
+  )
+}
