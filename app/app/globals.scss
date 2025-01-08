@@ -23,14 +23,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    // --background-primary:   #2E3440;
-    // --background-secondary: #3B4252;
-    // --background-tertiary:  #434C5E;
-    // --font-primary:         #ECEFF4;
-    // --accent-primary:       #81A1C1;
+    --background-primary:   #2E3440;
+    --background-secondary: #3B4252;
+    --background-tertiary:  #434C5E;
+    --font-primary:         #ECEFF4;
+    --accent-primary:       #81A1C1;
 
-    // --font-primary-filter:   invert(96%) sepia(5%) saturate(170%) hue-rotate(179deg) brightness(97%) contrast(99%);
-    // --accent-primary-filter: invert(76%) sepia(11%) saturate(1129%) hue-rotate(172deg) brightness(83%) contrast(78%);
+    --font-primary-filter:   invert(96%) sepia(5%) saturate(170%) hue-rotate(179deg) brightness(97%) contrast(99%);
+    --accent-primary-filter: invert(76%) sepia(11%) saturate(1129%) hue-rotate(172deg) brightness(83%) contrast(78%);
   }
 }
 
