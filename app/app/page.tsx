@@ -1,7 +1,7 @@
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-import Experience from "./components/Experience/Experience";
+import Experiences from "./components/Experiences/Experiences";
 import Footer from "./components/Footer/Footer";
 
 import styles from "./page.module.scss";
@@ -171,18 +171,32 @@ export default function Main() {
             }
           ]}
         ></Skills>
-        <Experience
-          title="Digital Cadet"
-          date="Oct 2024 - Present"
-          organisation= {{
-            title: "GovTEAMS",
-            href: "https://www.govteams.gov.au/"
-          }}
-          description="I am currently working as a junior software developer contributing to the React frontend and .NET backend."
-          technologies={[
-            ".NET", "React", "Azure", "Figma"
+        <Experiences
+          experiences={[
+            {
+              title: "Digital Cadet",
+              date: "Oct 2024 - Present",
+              organisation: {
+                title: "GovTEAMS",
+                href: "https://www.govteams.gov.au/"
+              },
+              description: "I am currently working as a junior software developer contributing to the React frontend and .NET backend.",
+              technologies: [
+                ".NET", "React", "Azure", "Figma"
+              ]
+            },
+            {
+              title: "IT Service Desk Agent",
+              date: "Feb 2023 - Feb 2024",
+              organisation: {
+                title: "DEWR",
+                href: "https://www.dewr.gov.au/"
+              },
+              description: "Assisted internal employees with their IT issues, directed external clients to the appropriate line while operating the switchboard, and trained new service desk agents.",
+              technologies: []
+            }
           ]}
-        ></Experience>
+        ></Experiences>
       </main> 
       <Footer></Footer>
     </>

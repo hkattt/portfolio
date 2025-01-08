@@ -1,6 +1,6 @@
 import React from "react";
-import RedirectLink from "../RedirectLink/RedirectLink";
-import TechnologyPill from "../TechnologyPill/TechnologyPill";
+import RedirectLink from "../../RedirectLink/RedirectLink";
+import TechnologyPill from "../../TechnologyPill/TechnologyPill";
 
 import styles from "./Experience.module.scss";
 

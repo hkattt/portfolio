@@ -27,6 +27,10 @@ export interface ProjectProps {
     technologies: string[];
 }
 
+export interface ExperiencesProps {
+    experiences: ExperienceProps[];
+}
+
 export interface ExperienceProps {
     title: string;
     date: string;
