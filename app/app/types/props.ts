@@ -15,6 +15,10 @@ export interface TechnologyPillProps {
     name: string;
 }
 
+export interface TechnologyPillsProps {
+    technologies: TechnologyPillProps[];
+}
+
 export interface ProjectsProps {
     projects: ProjectProps[];
 }
@@ -24,7 +28,7 @@ export interface ProjectProps {
     title: string;
     description: ReactNode;
     links: Link[];
-    technologies: string[];
+    technologies: TechnologyPillProps[];
 }
 
 export interface ExperiencesProps {
@@ -36,7 +40,7 @@ export interface ExperienceProps {
     date: string;
     organisation: Organisation
     description: string;
-    technologies: string[];
+    technologies: TechnologyPillProps[];
 }
 
 export interface SkillsProps {

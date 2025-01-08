@@ -33,7 +33,9 @@ export default function Main() {
                 }
               ],
               technologies: [
-                "Godot Engine"
+                {
+                  name: "Godot Engine"
+                }
               ]
             },
             {
@@ -52,9 +54,15 @@ export default function Main() {
                 }
               ],
               technologies: [
-                "C++",
-                "CMake",
-                "Linux"
+                {
+                  name: "C++"
+                },
+                {
+                  name: "CMake"
+                },
+                {
+                  name: "Linux"
+                }
               ]
             }
           ]}
@@ -182,7 +190,18 @@ export default function Main() {
               },
               description: "I am currently working as a junior software developer contributing to the React frontend and .NET backend.",
               technologies: [
-                ".NET", "React", "Azure", "Figma"
+                {
+                  name: ".NET"
+                }, 
+                {
+                  name: "React"
+                }, 
+                {
+                  name: "Azure"
+                }, 
+                {
+                  name: "Figma"
+                }
               ]
             },
             {

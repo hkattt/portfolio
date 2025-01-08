@@ -19,7 +19,8 @@
         div {
             display: flex;
             flex-direction: row;
-            gap: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
     }
 }
