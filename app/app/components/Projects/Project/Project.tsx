@@ -1,6 +1,6 @@
 import Image from "next/image";
 import RedirectLink from "../../RedirectLink/RedirectLink";
-import TechnologyPill from "../../TechnologyPill/TechnologyPill";
+import TechnologyPills from "../../TechnologyPills/TechnologyPills";
 
 import styles from "./Project.module.scss";
 
@@ -20,13 +20,7 @@ const Project = ({image, title, description, links, technologies}: ProjectProps)
                     ))
                 }
             </div>
-            <div>
-                {
-                    technologies.map((technology, index) => (
-                        <TechnologyPill key={index} name={technology}></TechnologyPill>
-                    ))
-                }
-            </div>
+            <TechnologyPills technologies={technologies}></TechnologyPills>
         </div>
     </div>
   )

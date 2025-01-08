@@ -1,6 +1,6 @@
 import React from "react";
 import RedirectLink from "../../RedirectLink/RedirectLink";
-import TechnologyPill from "../../TechnologyPill/TechnologyPill";
+import TechnologyPills from "../../TechnologyPills/TechnologyPills";
 
 import styles from "./Experience.module.scss";
 
@@ -15,13 +15,7 @@ const Experience = ({title, date, organisation, description, technologies}: Expe
         </div>
         <RedirectLink title={organisation.title} href={organisation.href}></RedirectLink>
         <p className={styles.description}>{description}</p>
-        <div className={styles.technologies}>
-            {
-                technologies.map((technology, index) => (
-                    <TechnologyPill key={index} name={technology}></TechnologyPill>
-                ))
-            }
-        </div>
+        <TechnologyPills technologies={technologies}></TechnologyPills>
     </div>
   )
 }
