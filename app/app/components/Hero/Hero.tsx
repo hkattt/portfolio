@@ -15,27 +15,33 @@ const Hero = () => {
                 </h1>
                 <span>
                     <IconButton
+                        image={{
+                            src: "/email.svg",
+                            alt: "Email Icon",
+                            width: 35,
+                            height: 35
+                        }}
                         link="mailto:hugo.kat3@gmail.com"
-                        src="/email.svg"
-                        alt="Email Icon"
-                        width={35}
-                        height={35}
                     >
                     </IconButton>
                     <IconButton
+                        image={{
+                            src: "/github.svg",
+                            alt: "GitHub Icon",
+                            width: 30,
+                            height: 30
+                        }}
                         link="https://github.com/hkattt"
-                        src="/github.svg"
-                        alt="GitHub Icon"
-                        width={30}
-                        height={30}
                     >
                     </IconButton>
                     <IconButton
+                        image={{
+                            src: "/linkedin.svg",
+                            alt: "LinkedIn Icon",
+                            width: 30,
+                            height: 30
+                        }}
                         link="https://www.linkedin.com/in/hugo-kat/"
-                        src="/linkedin.svg"
-                        alt="LinkedIn Icon"
-                        width={30}
-                        height={30}
                     >
                     </IconButton>
                 </span>

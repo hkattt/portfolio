@@ -1,32 +1,15 @@
-import React, { ReactNode } from "react"
 import Image from "next/image";
 import RedirectLink from "../RedirectLink/RedirectLink";
 import TechnologyPill from "../TechnologyPill/TechnologyPill";
 
 import styles from "./Project.module.scss";
 
-interface Image {
-    src: string;
-    alt: string;
-}
-
-interface Link {
-    title: string;
-    href: string;
-}
-
-interface ProjectProps {
-    image: Image;
-    title: string;
-    description: ReactNode;
-    links: Link[];
-    technologies: string[];
-}
+import { ProjectProps } from "@/app/types/props";
 
 const Project = ({image, title, description, links, technologies}: ProjectProps) => {
   return (
     <div className={styles.project}>
-        <Image src={image.src} alt={image.alt} width={0} height={0} sizes="100vw" style={{width: "100%", height: "auto"}}></Image>
+        <Image src={image.src} alt={image.alt} width={image.width} height={image.width} sizes="100vw" style={{width: "100%", height: "auto"}}></Image>
         <div className={styles.content}>
             <h3>{title}</h3>
             <p className={styles.description}>{description}</p>

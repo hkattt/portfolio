@@ -4,10 +4,7 @@ import Link from "next/link";
 
 import styles from "./RedirectLink.module.scss";
 
-interface RedirectLinkProps {
-    title: string;
-    href: string;
-}
+import { RedirectLinkProps } from "@/app/types/props";
 
 const RedirectLink = ({title, href}: RedirectLinkProps) => {
   return (

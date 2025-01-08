@@ -2,9 +2,7 @@ import React from "react";
 
 import styles from "./TechnologyPill.module.scss";
 
-interface TechnologyPillProps {
-    name: string;
-}
+import { TechnologyPillProps } from "@/app/types/props";
 
 const TechnologyPill = ({name}: TechnologyPillProps) => {
   return (

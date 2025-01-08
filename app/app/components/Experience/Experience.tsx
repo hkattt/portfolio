@@ -4,18 +4,7 @@ import TechnologyPill from "../TechnologyPill/TechnologyPill";
 
 import styles from "./Experience.module.scss";
 
-interface Organisation {
-    title: string;
-    href: string;
-}
-
-interface ExperienceProps {
-    title: string;
-    date: string;
-    organisation: Organisation
-    description: string;
-    technologies: string[];
-}
+import { ExperienceProps } from "@/app/types/props";
 
 const Experience = ({title, date, organisation, description, technologies}: ExperienceProps) => {
   return (

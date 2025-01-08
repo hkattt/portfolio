@@ -4,18 +4,12 @@ import Link from "next/link";
 
 import styles from "./IconButton.module.scss";
 
-interface IconButtonProps {
-  link: string;
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-}
+import { IconButtonProps } from "@/app/types/props";
 
-const IconButton = ({link, src, alt, width, height}: IconButtonProps) => {
+const IconButton = ({image, link}: IconButtonProps) => {
   return (
     <Link className={styles.container} href={link} target="_blank" rel="noopener noreferrer">
-      <Image src={src} alt={alt} width={width} height={height} style={{objectFit: "cover"}}/>
+      <Image src={image.src} alt={image.alt} width={image.width} height={image.height} style={{objectFit: "cover"}}/>
     </Link>
   )
 }
