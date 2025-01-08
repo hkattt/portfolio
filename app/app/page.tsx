@@ -153,7 +153,7 @@ export default function Main() {
             },
             {
               image: {
-                src: "/Linux.svg",
+                src: "/linux.svg",
                 alt: "Linux Icon",
                 width: 55,
                 height: 55
