@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 
 import styles from "./page.module.scss";
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pb = new PocketBase(process.env.NEXT_PUBLIC_POCKETBASE_URL);
 
 export default async function Main() {
   let projects = [];
