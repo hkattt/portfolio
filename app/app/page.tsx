@@ -11,8 +11,8 @@ import styles from "./page.module.scss";
 const pb = new PocketBase(process.env.NEXT_PUBLIC_POCKETBASE_URL);
 
 export default async function Main() {
-  let projects = [];
-  let experiences = [];
+  const projects = [];
+  const experiences = [];
 
   try {
     const [projectsRecord, experiencesRecord] = await Promise.all([
@@ -20,8 +20,8 @@ export default async function Main() {
       pb.collection("experiences").getFullList()
     ]);
     
-    for (let index in projectsRecord) {
-      let projectRecord = projectsRecord[index];
+    for (const index in projectsRecord) {
+      const projectRecord = projectsRecord[index];
       projects.push(
         {
           image: {
@@ -38,8 +38,8 @@ export default async function Main() {
       );
     }
 
-    for (let index in experiencesRecord) {
-      let experienceRecord = experiencesRecord[index];
+    for (const index in experiencesRecord) {
+      const experienceRecord = experiencesRecord[index];
       experiences.push(
         {
           title: experienceRecord["title"],
