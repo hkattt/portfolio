@@ -16,11 +16,11 @@ const Project = ({image, title, description, links, technologies}: ProjectProps)
             <div>
                 {
                     links.map((link, index) => (
-                        <RedirectLink key={index} title={link.title} href={link.href}></RedirectLink>
+                        <RedirectLink key={index} title={link.title} href={link.href}/>
                     ))
                 }
             </div>
-            <TechnologyPills technologies={technologies}></TechnologyPills>
+            <TechnologyPills technologies={technologies}/>
         </div>
     </div>
   )

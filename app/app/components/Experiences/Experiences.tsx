@@ -19,7 +19,7 @@ const Projects = ({experiences}: ExperiencesProps) => {
                         organisation={project.organisation}
                         description={project.description}
                         technologies={project.technologies}
-                    ></Experience>
+                    />
                 ))
             }
         </div>

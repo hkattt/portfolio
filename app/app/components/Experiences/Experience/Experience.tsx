@@ -13,9 +13,9 @@ const Experience = ({title, date, organisation, description, technologies}: Expe
             <h3>{title}</h3>
             <p className={styles.date}>{date}</p>
         </div>
-        <RedirectLink title={organisation.title} href={organisation.href}></RedirectLink>
+        <RedirectLink title={organisation.title} href={organisation.href}/>
         <p className={styles.description}>{description}</p>
-        <TechnologyPills technologies={technologies}></TechnologyPills>
+        <TechnologyPills technologies={technologies}/>
     </div>
   )
 }
