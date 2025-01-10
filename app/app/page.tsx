@@ -1,3 +1,5 @@
+import PocketBase from "pocketbase";
+
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
@@ -6,67 +8,57 @@ import Footer from "./components/Footer/Footer";
 
 import styles from "./page.module.scss";
 
-export default function Main() {
+const pb = new PocketBase("http://127.0.0.1:8090");
+
+export default async function Main() {
+  let projects = [];
+  let experiences = [];
+
+  try {
+    const [projectsRecord, experiencesRecord] = await Promise.all([
+      pb.collection("projects").getFullList(),
+      pb.collection("experiences").getFullList()
+    ]);
+    
+    for (let index in projectsRecord) {
+      let projectRecord = projectsRecord[index];
+      projects.push(
+        {
+          image: {
+            src: `${pb.baseURL}/api/files/projects/${projectRecord["id"]}/${projectRecord["image"]}`,
+            alt: projectRecord["alt"],
+            width: 0,
+            height: 0
+          },
+          title: projectRecord["title"],
+          description: projectRecord["description"],
+          links: projectRecord["links"],
+          technologies: projectRecord["technologies"]
+        }
+      );
+    }
+
+    for (let index in experiencesRecord) {
+      let experienceRecord = experiencesRecord[index];
+      experiences.push(
+        {
+          title: experienceRecord["title"],
+          date: experienceRecord["date"],
+          organisation: experienceRecord["organisation"],
+          description: experienceRecord["description"],
+          technologies: experienceRecord["technologies"]
+        }
+      );
+    }
+  } catch (err) {
+    console.error("Error fetching data:", err);
+  } 
+
   return (
     <>
       <main className={styles.portfolio}>
         <Hero></Hero>
-        <Projects
-          projects={[
-            {
-              image: {
-                src: "/interrogation.png",
-                alt: "Interrogation background art",
-                width: 0,
-                height: 0
-              },
-              title: "Interrogation",
-              description: "Created a murder-mystery game called Interrogation for GitHub Game Off 2024.",
-              links: [
-                {
-                  title: "Play Online",
-                  href: "https://itch.io/jam/game-off-2024/rate/3148097"
-                },
-                {
-                  title: "View GitHub",
-                  href: "https://github.com/hkattt/interrogation"
-                }
-              ],
-              technologies: [
-                {
-                  name: "Godot Engine"
-                }
-              ]
-            },
-            {
-              image: {
-                src: "/fast-paint-texture.png",
-                alt: "Fast paint texture artwork",
-                width: 0,
-                height: 0
-              },
-              title: "Fast Paint Texture",
-              description: "Reimplemented Aaron Hertzmann's Fast Paint Texture algorithm. The program generates images with a hand-painted appearance from a provided source image.",
-              links: [
-                {
-                  title: "View GitHub",
-                  href: "https://github.com/hkattt/fast-paint-texture"
-                }
-              ],
-              technologies: [
-                {
-                  name: "C++"
-                },
-                {
-                  name: "CMake"
-                },
-                {
-                  name: "Linux"
-                }
-              ]
-            }
-          ]}
-        ></Projects>
+        <Projects projects={projects}></Projects>
         <Skills
           skills={[
             {
@@ -179,43 +171,7 @@ export default function Main() {
             }
           ]}
         ></Skills>
-        <Experiences
-          experiences={[
-            {
-              title: "Digital Cadet",
-              date: "Oct 2024 - Present",
-              organisation: {
-                title: "GovTEAMS",
-                href: "https://www.govteams.gov.au/"
-              },
-              description: "I am currently working as a junior software developer contributing to the React frontend and .NET backend.",
-              technologies: [
-                {
-                  name: ".NET"
-                }, 
-                {
-                  name: "React"
-                }, 
-                {
-                  name: "Azure"
-                }, 
-                {
-                  name: "Figma"
-                }
-              ]
-            },
-            {
-              title: "IT Service Desk Agent",
-              date: "Feb 2023 - Feb 2024",
-              organisation: {
-                title: "DEWR",
-                href: "https://www.dewr.gov.au/"
-              },
-              description: "Assisted internal employees with their IT issues, directed external clients to the appropriate line while operating the switchboard, and trained new service desk agents.",
-              technologies: []
-            }
-          ]}
-        ></Experiences>
+        <Experiences experiences={experiences}></Experiences>
       </main> 
       <Footer></Footer>
     </>

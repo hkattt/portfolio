@@ -6,6 +6,7 @@ This is my personal website made using Vite, React, and TypeScript
 ## Dependencies
 - Node
 - NextJS
+- Pocketbase
 - SaSS
 - Next Fonts
 
