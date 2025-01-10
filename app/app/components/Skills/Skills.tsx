@@ -12,7 +12,7 @@ const Skills = ({skills}: SkillsProps) => {
         <div>
             {
                 skills.map((skill, index) => (
-                    <Skill key={index} image={skill.image} name={skill.name}></Skill>
+                    <Skill key={index} image={skill.image} name={skill.name}/>
                 ))
             }
         </div>

@@ -6,8 +6,11 @@ This is my personal website made using Vite, React, and TypeScript
 ## Dependencies
 - Node
 - NextJS
+- Pocketbase
 - SaSS
 - Next Fonts
+
+The [Pocketbase](https://pocketbase.io/) backend is hosted by [Pockethost](https://pockethost.io/). 
 
 ## Assets
 The icons used in this website were retrieved from the following sites: [Simple Icons](https://simpleicons.org/), [SVG Repo](https://www.svgrepo.com/), and [Icon Icons](https://icon-icons.com/). Each icon has a corresponding attribution if needed. 

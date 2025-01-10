@@ -22,8 +22,7 @@ const Hero = () => {
                             height: 35
                         }}
                         link="mailto:hugo.kat3@gmail.com"
-                    >
-                    </IconButton>
+                    />
                     <IconButton
                         image={{
                             src: "/github.svg",
@@ -32,8 +31,7 @@ const Hero = () => {
                             height: 30
                         }}
                         link="https://github.com/hkattt"
-                    >
-                    </IconButton>
+                    />
                     <IconButton
                         image={{
                             src: "/linkedin.svg",
@@ -42,8 +40,7 @@ const Hero = () => {
                             height: 30
                         }}
                         link="https://www.linkedin.com/in/hugo-kat/"
-                    >
-                    </IconButton>
+                    />
                 </span>
             </div>
             <Image className={styles.picture} src="/hugo.png" alt="Hugo Profile Picture" width={0} height={0} sizes="100vw" style={{width: "100%", height: "auto"}}/>
