@@ -6,8 +6,8 @@ import styles from "./Header.module.scss";
 const Header = () => {
   return (
     <header className={styles.header} id="Header" aria-label="Header">
-        <div>
-            <ThemeButton width={50} height={50}></ThemeButton>
+        <div className={styles.content}>
+            <ThemeButton></ThemeButton>
         </div>
     </header>
   )

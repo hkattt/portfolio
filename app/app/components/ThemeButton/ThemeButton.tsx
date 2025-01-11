@@ -4,9 +4,7 @@ import Image from "next/image";
 
 import styles from "./ThemeButton.module.scss";
 
-import { ThemeButtonProps } from '@/app/types/props';
-
-const ThemeButton = ({width, height}: ThemeButtonProps) => {
+const ThemeButton = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -23,13 +21,15 @@ const ThemeButton = ({width, height}: ThemeButtonProps) => {
     setIsDark(() => !isDark);
     };
 
-  const themeImgSrc: string = isDark ? "/sun.svg" : "/moon.svg"; 
-  const alt: string = isDark ? "Sun icon" : "Moon icon";
-
   return (
-    <button className={styles.themeButton} onClick={switchTheme}>
-      <Image src={themeImgSrc} alt={alt} width={width} height={height} style={{objectFit: "cover"}}/>
-    </button>
+    <div className={styles.themeButton} onClick={switchTheme}>
+      <span className={!isDark ? styles.selected : styles.notSelected}>
+        <Image src="sun.svg" alt="Sun Icon" width={32} height={32} style={{objectFit: "cover"}}/>
+      </span>
+      <span className={isDark ? styles.selected : styles.notSelected}>
+        <Image src={"moon.svg"} alt="Moon Icon" width={32} height={32} style={{objectFit: "cover"}}/>
+      </span>
+    </div>
   )  
 }
 

@@ -19,11 +19,6 @@ export interface TechnologyPillsProps {
     technologies: TechnologyPillProps[];
 }
 
-export interface ThemeButtonProps {
-    width: number;
-    height: number;
-}
-
 export interface ProjectsProps {
     projects: ProjectProps[];
 }

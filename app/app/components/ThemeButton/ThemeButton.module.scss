@@ -1,0 +1,28 @@
+.themeButton {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    background-color: var(--background-secondary);
+    outline: var(--outline);
+    border-radius: 25px;
+    padding: 0.2rem 0.2rem;
+
+    span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        img {
+            filter: var(--font-primary-filter);
+        }
+    }
+
+    .selected {
+        background-color: var(--background-tertiary);
+    }
+    
+    .notSelected {
+        opacity: 25%;
+    }
+}
