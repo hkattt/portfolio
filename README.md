@@ -8,6 +8,7 @@ Hey there! This is the repository for my [portfolio website](https://hugokat.dev
 - [NextJS](https://nextjs.org/docs/app/getting-started/installation)
 - [Pocketbase](https://pocketbase.io/docs/) and [JavaScript SDK](https://github.com/pocketbase/js-sdk)
 - [Sass](https://sass-lang.com/install/)
+- [Material icons](https://mui.com/material-ui/material-icons/?query=moon&theme=Outlined)
 
 ## Assets
 The following resources were used in the creation of this website:
