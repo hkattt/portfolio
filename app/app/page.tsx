@@ -78,14 +78,14 @@ export default async function Main() {
 
   return (
     <>
-      <Header></Header>
+      <Header/>
       <main className={styles.portfolio}>
         <Hero/>
         <Projects projects={projects}/>
         <Skills skills={skills}/>
         <Experiences experiences={experiences}/>
       </main> 
-      <Footer></Footer>
+      <Footer/>
     </>
   )
 }
