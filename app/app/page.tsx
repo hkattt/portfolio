@@ -31,8 +31,8 @@ const skills: SkillProps[] = skillNames.map(({name, icon}) => (
     image: {
       src: `/${icon}`,
       alt: `${name} Icon`,
-      width: 55, 
-      height: 55
+      width: 0, 
+      height: 0
     },
     name: name
   }
@@ -78,14 +78,14 @@ export default async function Main() {
 
   return (
     <>
-      <Header></Header>
+      <Header/>
       <main className={styles.portfolio}>
         <Hero/>
         <Projects projects={projects}/>
         <Skills skills={skills}/>
         <Experiences experiences={experiences}/>
       </main> 
-      <Footer></Footer>
+      <Footer/>
     </>
   )
 }
