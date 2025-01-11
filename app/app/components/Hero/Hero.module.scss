@@ -4,7 +4,7 @@
     gap: 50px 50px;
     justify-content: center;
     align-items: center;
-    margin: 200px 0;
+    margin: 150px 0;
 
     div {
         display: inline-flex;
@@ -38,5 +38,6 @@
     .hero {
         grid-template-columns: 0.5fr;
         grid-template-rows: 0.5fr 0.25fr;
+        margin: 50px 0;
     }
 }

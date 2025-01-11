@@ -31,8 +31,8 @@ const skills: SkillProps[] = skillNames.map(({name, icon}) => (
     image: {
       src: `/${icon}`,
       alt: `${name} Icon`,
-      width: 55, 
-      height: 55
+      width: 0, 
+      height: 0
     },
     name: name
   }
