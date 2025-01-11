@@ -16,6 +16,10 @@
         flex-direction: column;
         gap: 0.8rem;
 
+        .description {
+            font: var(--body);
+        }
+
         div {
             display: flex;
             flex-direction: row;
