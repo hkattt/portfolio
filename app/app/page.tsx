@@ -1,5 +1,6 @@
 import pb from "./utils/pocketbaseClient";
 
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
@@ -77,6 +78,7 @@ export default async function Main() {
 
   return (
     <>
+      <Header></Header>
       <main className={styles.portfolio}>
         <Hero/>
         <Projects projects={projects}/>
