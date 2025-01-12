@@ -5,11 +5,6 @@ export interface Image {
     height: number;
 }
 
-export interface Organisation {
-    title: string;
-    href: string;
-}
-
 export interface Link {
     title: string;
     href: string;
