@@ -1,7 +1,13 @@
 .attributions {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
     gap: 2rem;
+
+    h1 {
+        margin: 2rem 0;
+    }
 
     .grid {
         display: grid;
