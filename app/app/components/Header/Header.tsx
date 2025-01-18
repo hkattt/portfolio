@@ -7,11 +7,6 @@ import ThemeButton from "../ThemeButton/ThemeButton";
 import styles from "./Header.module.scss";
 
 const Header = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({behavior: "smooth", block: "end"})
-  };
-
   return (
     <header className={styles.header} id="header" aria-label="Header">
         <div className={styles.content}>
