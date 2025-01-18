@@ -5,7 +5,7 @@ import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer} id="Footer" aria-label="Footer">
+    <footer className={styles.footer} id="footer" aria-label="Footer">
         <div>
             <p className={styles.body}>Designed in <Link href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma</Link> with 
             the <Link href="https://www.nordtheme.com/" target="_blank" rel="noopener noreferrer">Nord Theme</Link>, built 

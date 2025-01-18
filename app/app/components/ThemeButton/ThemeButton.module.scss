@@ -4,14 +4,11 @@
     gap: 0.25rem;
     background-color: var(--background-secondary);
     outline: var(--outline);
-    border-radius: 25px;
-    padding: 0.2rem 0.2rem;
+    border-radius: 5px;
+    padding: 0.5rem;
 
     span {
         display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
 
         img {
             filter: var(--font-primary-filter);
@@ -19,10 +16,18 @@
     }
 
     .selected {
-        background-color: var(--background-tertiary);
+        display: inline-flex;
     }
     
     .notSelected {
-        opacity: 25%;
+        display: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        span img {
+            filter: var(--accent-primary-filter);
+        }
     }
 }

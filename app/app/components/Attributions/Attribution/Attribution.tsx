@@ -11,7 +11,7 @@ const Attribution = ({image, icon, license}: AttributionProps) => {
   console.log(license)
   return (
     <div className={styles.attribution}>
-        <Image src={image.src} alt={image.alt} width={image.width} height={image.height} style={{width: "clamp(40px, 5vw, 55px)", height: "clamp(40px, 5vw, 55px)", objectFit: "cover"}}/>
+        <Image src={image.src} alt={image.alt} width={image.width} height={image.height} style={{width: "clamp(35px, 5vw, 45px)", height: "clamp(35px, 5vw, 45px)", objectFit: "cover"}}/>
         <div>
             <RedirectLink title={icon.title} href={icon.href}></RedirectLink>
             {

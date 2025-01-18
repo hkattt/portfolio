@@ -24,10 +24,28 @@ const ThemeButton = () => {
   return (
     <div className={styles.themeButton} onClick={switchTheme}>
       <span className={!isDark ? styles.selected : styles.notSelected}>
-        <Image src="sun.svg" alt="Sun Icon" width={32} height={32} style={{objectFit: "cover"}}/>
+        <Image 
+          src="sun.svg" 
+          alt="Sun Icon" 
+          width={0} height={0} 
+          style={{
+            width: "clamp(20px, 3vw, 30px)", 
+            height: "clamp(20px, 3vw, 30px)", 
+            objectFit: "cover"
+          }}
+        />
       </span>
       <span className={isDark ? styles.selected : styles.notSelected}>
-        <Image src={"moon.svg"} alt="Moon Icon" width={32} height={32} style={{objectFit: "cover"}}/>
+        <Image 
+          src={"moon.svg"} 
+          alt="Moon Icon" 
+          width={0} height={0} 
+          style={{
+            width: "clamp(20px, 3vw, 30px)", 
+            height: "clamp(20px, 3vw, 30px)", 
+            objectFit: "cover"
+          }}
+        />
       </span>
     </div>
   )  

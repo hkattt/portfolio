@@ -1,15 +1,56 @@
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
+    background-color: color-mix(in oklab, var(--background-primary) 60%, transparent);
+    backdrop-filter: blur(20rem);
 
     .content {
-        display: flex;
+        display: inherit;
         flex-direction: row;
-        gap: 1rem;
+        gap: 2rem;
+        justify-content: right;
+        align-items: inherit;
         max-width: var(--content-width);
         width: 100%;
         padding: 0 1rem;
+
+        .bar {
+            display: inline-flex;
+            flex-direction: inherit;
+            align-items: inherit;
+            gap: inherit;
+            padding: 0.5rem 1.4rem;
+
+            nav {
+                display: inherit;
+                flex-direction: inherit;
+                gap: inherit;
+    
+                a {
+                    all: unset;
+                    font: var(--large);
+                    padding: 0.5rem;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: var(--background-secondary);
+                        outline: var(--outline);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .header .content .bar {
+        display: none;
     }
 }

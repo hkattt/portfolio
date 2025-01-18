@@ -7,7 +7,7 @@ import { ExperiencesProps } from "@/app/types/props";
 
 const Projects = ({experiences}: ExperiencesProps) => {
   return (
-    <section className={styles.experiences} id="My Experiences" aria-label="Experiences">
+    <section className={styles.experiences} id="experiences" aria-label="Experiences">
         <h2>Work Experience</h2>
         <div className={styles.list}>
             {

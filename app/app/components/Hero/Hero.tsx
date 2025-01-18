@@ -6,7 +6,7 @@ import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}id="Hero" aria-label="Hero">
+    <section className={styles.hero} id="hero" aria-label="Hero">
             <div>
                 <h1>
                     Hey! I&apos;m <span>Hugo Kat </span>
