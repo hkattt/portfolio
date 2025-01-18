@@ -23,7 +23,7 @@ const ThemeButton = () => {
 
   return (
     <div className={styles.themeButton} onClick={switchTheme}>
-      <span className={!isDark ? styles.selected : styles.notSelected}>
+      <span className={isDark ? styles.selected : styles.notSelected}>
         <Image 
           src="sun.svg" 
           alt="Sun Icon" 
@@ -35,7 +35,7 @@ const ThemeButton = () => {
           }}
         />
       </span>
-      <span className={isDark ? styles.selected : styles.notSelected}>
+      <span className={!isDark ? styles.selected : styles.notSelected}>
         <Image 
           src={"moon.svg"} 
           alt="Moon Icon" 
