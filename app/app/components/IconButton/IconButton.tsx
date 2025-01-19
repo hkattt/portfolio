@@ -14,8 +14,8 @@ const IconButton = ({image, link}: IconButtonProps) => {
         alt={image.alt} 
         width={image.width} height={image.height} 
         style={{
-          width: "clamp(20px, 3vw, 30px)", 
-          height: "clamp(20px, 3vw, 30px)", 
+          width: "clamp(25px, 3vw, 30px)", 
+          height: "clamp(25px, 3vw, 30px)", 
           objectFit: "cover"
         }}
       />

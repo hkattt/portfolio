@@ -4,10 +4,10 @@
     gap: 50px 50px;
     justify-content: center;
     align-items: center;
-    margin: 10rem 0 5rem 0;
+    margin: 5rem 0 2.5rem 0;
 
     div {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         gap: 50px;
         justify-content: center;
@@ -36,8 +36,17 @@
 
 @media (max-width: 850px) {
     .hero {
-        grid-template-columns: 0.5fr;
-        grid-template-rows: 0.5fr 0.25fr;
-        margin: 5rem 0 2.5rem 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        margin: 2.5rem 0 0 0;
+
+        div {
+            grid-column: span 4;
+        }
+
+        .picture {
+            grid-column: 2 / 4;
+            justify-self: center;
+        }
     }
 }

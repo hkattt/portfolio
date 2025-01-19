@@ -1,9 +1,10 @@
 .pill {
-    background-color: var(--accent-primary);
+    background-color: color-mix(in oklab, var(--accent-primary) 30%, transparent);
     padding: 0.5rem 1rem;
     border-radius: 50px;
 
     p {
         font: var(--body);
+        color: var(--accent-primary);
     }
 }

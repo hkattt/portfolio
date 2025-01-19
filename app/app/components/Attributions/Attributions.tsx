@@ -7,7 +7,7 @@ import { AttributionsProps } from "@/app/types/props"
 
 const Attributions = ({attributions}: AttributionsProps) => {
   return (
-    <section className={styles.attributions} id="My Experiences" aria-label="Experiences">
+    <section className={styles.attributions} id="attributions">
         <h1>Attribution</h1>
         <div className={styles.grid}>
             {
