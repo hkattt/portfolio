@@ -10,12 +10,12 @@
 
   --content-width: 1024px;
 
-  --h1: 700 clamp(36px, 3vw, 48px) / clamp(50px, 4vw, 57px) var(--font-inter);
+  --h1: 700 clamp(30px, 3vw, 48px) / clamp(50px, 4vw, 57px) var(--font-inter);
   --h2: 600 clamp(28px, 2.5vw, 32px) / clamp(36px, 2.5vw, 38px) var(--font-inter);
   --h3: 600 clamp(18px, 2vw, 24px) / clamp(28px, 2.5vw, 31px) var(--font-inter);
   --large: 500 clamp(16px, 2vw, 20px) / clamp(24px, 2vw, 26px) var(--font-inter);
-  --body-bold: 700 clamp(14px, 1.5vw, 16px) / 23px var(--font-inter);
-  --body: 400 clamp(14px, 1.5vw, 16px) / 23px var(--font-inter);
+  --body-bold: 700 clamp(14px, 1.5vw, 16px) / 22px var(--font-inter);
+  --body: 400 clamp(14px, 1.5vw, 16px) / 22px var(--font-inter);
   --small: 400 clamp(12px, 1.5vw, 14px) / 20px var(--font-inter);
 
   --outline: 2px solid var(--background-tertiary);
