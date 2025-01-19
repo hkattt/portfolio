@@ -27,6 +27,7 @@ const ThemeButton = () => {
         <Image 
           src="sun.svg" 
           alt="Sun Icon" 
+          aria-label="Light mode toggle button"
           width={25} height={25} 
           style={{
             objectFit: "cover"
@@ -37,6 +38,7 @@ const ThemeButton = () => {
         <Image 
           src={"moon.svg"} 
           alt="Moon Icon" 
+          aria-label="Dark mode toggle button"
           width={25} height={25} 
           style={{
             objectFit: "cover"
