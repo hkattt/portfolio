@@ -7,7 +7,7 @@ import { SkillsProps } from "@/app/types/props";
 
 const Skills = ({skills}: SkillsProps) => {
   return (
-    <div className={styles.skills} id="skills" aria-label="Skills">
+    <div className={styles.skills} id="skills">
         <h2>My Skills</h2>
         <div>
             {

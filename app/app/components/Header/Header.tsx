@@ -8,7 +8,7 @@ import styles from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <header className={styles.header} id="header" aria-label="Header">
+    <header className={styles.header} id="header">
         <div className={styles.content}>
             <span className={styles.bar}>
               <nav>
