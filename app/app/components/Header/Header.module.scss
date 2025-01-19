@@ -7,8 +7,8 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 1rem;
-    background-color: color-mix(in oklab, var(--background-primary) 60%, transparent);
-    backdrop-filter: blur(20rem);
+    background-color: color-mix(in oklab, var(--background-primary) 80%, transparent);
+    backdrop-filter: blur(1rem);
 
     .content {
         display: inherit;
@@ -31,16 +31,20 @@
                 display: inherit;
                 flex-direction: inherit;
                 gap: inherit;
+
+                &:hover a {
+                    opacity: 0.5;
+                }
     
                 a {
-                    all: unset;
+                    color: var(--font-primary);
                     font: var(--large);
                     padding: 0.5rem;
                     border-radius: 5px;
+                    transition: opacity 0.3s ease-in-out;
 
                     &:hover {
-                        background-color: var(--background-secondary);
-                        outline: var(--outline);
+                        opacity: 1;
                         cursor: pointer;
                     }
                 }
