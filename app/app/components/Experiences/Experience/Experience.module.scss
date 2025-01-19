@@ -10,7 +10,14 @@
     .header {
         display: flex;
         flex-direction: row;
+        gap: inherit;
 
+        .titleSection {
+            display: flex;
+            flex-direction: column;
+            gap: inherit;
+        }
+    
         .date {
             margin-left: auto;
             font: var(--small);
@@ -19,5 +26,15 @@
 
     .description {
         font: var(--body);
+    }
+}
+
+@media (max-width: 500px) {
+    .experience .header {
+        flex-direction: column;
+
+        .date {
+            margin-left: 0;
+        }
     }
 }
