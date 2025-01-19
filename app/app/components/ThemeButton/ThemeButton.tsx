@@ -19,7 +19,7 @@ const ThemeButton = () => {
     document.documentElement.setAttribute("theme", newTheme);
     localStorage.setItem("theme", newTheme);
     setIsDark(() => !isDark);
-    };
+  };
 
   return (
     <div className={styles.themeButton} onClick={switchTheme}>
@@ -27,10 +27,8 @@ const ThemeButton = () => {
         <Image 
           src="sun.svg" 
           alt="Sun Icon" 
-          width={0} height={0} 
+          width={25} height={25} 
           style={{
-            width: "clamp(20px, 3vw, 30px)", 
-            height: "clamp(20px, 3vw, 30px)", 
             objectFit: "cover"
           }}
         />
@@ -39,10 +37,8 @@ const ThemeButton = () => {
         <Image 
           src={"moon.svg"} 
           alt="Moon Icon" 
-          width={0} height={0} 
+          width={25} height={25} 
           style={{
-            width: "clamp(20px, 3vw, 30px)", 
-            height: "clamp(20px, 3vw, 30px)", 
             objectFit: "cover"
           }}
         />
