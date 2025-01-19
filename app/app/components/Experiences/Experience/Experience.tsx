@@ -10,10 +10,12 @@ const Experience = ({title, date, organisation, description, technologies}: Expe
   return (
     <div className={styles.experience}>
         <div className={styles.header}>
-            <h3>{title}</h3>
-            <p className={styles.date}>{date}</p>
+          <span className={styles.titleSection}>
+              <h3>{title}</h3>
+              <RedirectLink title={organisation.title} href={organisation.href}/>
+          </span>
+          <p className={styles.date}>{date}</p>
         </div>
-        <RedirectLink title={organisation.title} href={organisation.href}/>
         <p className={styles.description}>{description}</p>
         <TechnologyPills technologies={technologies}/>
     </div>
