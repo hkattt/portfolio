@@ -11,16 +11,19 @@ const Projects = ({projects}: ProjectsProps) => {
         <h2>My Projects</h2>
         <div className={styles.list}>
             {
-                projects.map((project, index) => (
-                    <Project
-                        key={index}
-                        image={project.image}
-                        title={project.title}
-                        description={project.description}
-                        links={project.links}
-                        technologies={project.technologies}
-                    />
-                ))
+                projects
+                    .sort((p1, p2) => p1.sortOrder - p2.sortOrder)
+                    .map((project, index) => (
+                        <Project
+                            key={index}
+                            image={project.image}
+                            title={project.title}
+                            description={project.description}
+                            links={project.links}
+                            technologies={project.technologies}
+                            sortOrder={project.sortOrder}
+                        />
+                    ))
             }
         </div>
     </section>

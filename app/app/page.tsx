@@ -59,7 +59,8 @@ export default async function Main() {
         title: projectRecord["title"],
         description: projectRecord["description"],
         links: projectRecord["links"],
-        technologies: projectRecord["technologies"]
+        technologies: projectRecord["technologies"],
+        sortOrder: projectRecord["sortOrder"]
       }
     ));
     
