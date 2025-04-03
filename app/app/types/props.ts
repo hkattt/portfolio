@@ -29,6 +29,7 @@ export interface ProjectProps {
     description: ReactNode;
     links: Link[];
     technologies: TechnologyPillProps[];
+    sortOrder: number
 }
 
 export interface ExperiencesProps {
