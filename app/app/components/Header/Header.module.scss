@@ -29,10 +29,6 @@
                 display: inherit;
                 flex-direction: inherit;
                 gap: inherit;
-
-                &:hover a {
-                    opacity: 0.5;
-                }
     
                 a {
                     color: var(--font-primary);
@@ -42,7 +38,8 @@
                     transition: opacity 0.3s ease-in-out;
 
                     &:hover {
-                        opacity: 1;
+                        background-color: var(--background-secondary);
+                        outline: var(--outline);
                         cursor: pointer;
                     }
                 }
