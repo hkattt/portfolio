@@ -12,10 +12,12 @@
   .content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: vars.$space-3;
 
     .header {
       display: inline-flex;
+      align-self: stretch;
       justify-content: space-between;
 
       .title {
@@ -30,12 +32,6 @@
     .description {
       @include mixins.typography(vars.$font-size-base, vars.$font-weight-light);
       color: vars.$font-tertiary;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: vars.$space-2;
     }
   }
 }

@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 
-import { Tag } from '@/components/ui/Tag';
+import { Tags } from '@/components/ui/Tags';
 import { Date } from '@/components/ui/Date';
 import { LinkButton } from '@/components/ui/Button';
 import { SmartLink } from '@/components/ui/SmartLink';
@@ -33,17 +33,13 @@ export const PortfolioItem: React.FC<PortfolioItemProps> = ({ portfolioItem }) =
             </div>
           )}
         </div>
-        { portfolioItem.subtitle && <span className={styles.subtitle}>{portfolioItem.subtitle}</span> }
-        { portfolioItem.description && <p className={styles.description}>{portfolioItem.description}</p> }
-        { portfolioItem.tags.length > 0 && (
-          <div className={styles.tags}>
-            {
-              portfolioItem.tags.map((tag, index) => (
-                <Tag key={index} text={tag} />
-              ))
-            }
-          </div>
+        { portfolioItem.subtitle && (
+          <SmartLink href={portfolioItem.subtitleLink} target='_blank'>
+            <span className={styles.subtitle}>{portfolioItem.subtitle}</span>
+          </SmartLink>
         )}
+        { portfolioItem.description && <p className={styles.description}>{portfolioItem.description}</p> }
+        { portfolioItem.tags.length > 0 && <Tags tags={portfolioItem.tags} /> }
       </div>
     </div>
   );
