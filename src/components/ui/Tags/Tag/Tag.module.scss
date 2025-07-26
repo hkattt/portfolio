@@ -8,7 +8,7 @@
   padding: vars.$space-1;
   color: vars.$accent-primary;
   background: rgba(vars.$accent-primary, 0.1);
-  border-radius: 8px;
+  border-radius: vars.$border-radius-md;
 
   .text {
     @include mixins.typography(vars.$font-size-sm, vars.$font-weight-medium);

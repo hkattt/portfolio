@@ -5,6 +5,11 @@ export type Link = {
   href: string;
 }
 
+export type Tag = {
+  icon?: React.ReactNode;
+  text: string;
+}
+
 export type Technology = {
   name: string;
 }
@@ -16,6 +21,12 @@ export type Image = {
   height: number;
 }
 
+export type SkillSet = {
+  title: string;
+  icon: React.ReactNode;
+  skills: Tag[];
+}
+
 export type PortfolioItem = {
   image?: Image;
   title: string;
@@ -25,7 +36,7 @@ export type PortfolioItem = {
   startDate: Date;
   endDate?: Date;
   description?: React.ReactNode;
-  tags: string[];
+  tags: Tag[];
   extraLinks: Link[];
   onGoing: boolean;
   sortOrder: number
