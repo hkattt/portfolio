@@ -1,0 +1,11 @@
+﻿@use '@/styles/variables' as vars;
+
+.skills {
+  column-count: 2;
+  column-gap: vars.$space-4;
+
+  .skill {
+    margin-bottom: vars.$space-4;
+  }
+}
+
