@@ -1,8 +1,19 @@
-﻿import { FaGithub } from 'react-icons/fa';
+﻿import { JSX } from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { RecordModel } from 'pocketbase';
+import { FaCode, FaMobileAlt, FaGamepad, FaMicrochip, FaCogs, FaDatabase } from "react-icons/fa";
 
 import { pocketbaseUrl } from '@/lib/config';
-import type { PortfolioItem, Technology } from '@/lib/types';
-import { RecordModel } from 'pocketbase';
+import type { PortfolioItem, SkillSet, Technology } from '@/lib/types';
+
+const skillTypeIconMap: Record<string, JSX.Element> = {
+  'App development': <FaMobileAlt />,
+  'Game development': <FaGamepad />,
+  'Systems': <FaMicrochip />,
+  'DevOps': <FaCogs />,
+  'Databases': <FaDatabase />,
+  _: <FaCode />,
+}
 
 export const mapProjectToPortfolioItem = (projectRecord: RecordModel): PortfolioItem => {
   return {
@@ -32,7 +43,6 @@ export const mapProjectToPortfolioItem = (projectRecord: RecordModel): Portfolio
 }
 
 export const mapExperienceToPortfolioItem = (experienceRecord: RecordModel): PortfolioItem => {
-  console.log(experienceRecord);
   return {
     title: experienceRecord['title'],
     subtitle: experienceRecord['organisation'].title,
@@ -59,5 +69,14 @@ export const mapEducationToPortfolioItem = (educationRecord: RecordModel): Portf
     extraLinks: [],
     onGoing: true,
     sortOrder: educationRecord['sortOrder']
+  }
+}
+
+export const mapSkillToSkillSet = (skillRecord: RecordModel): SkillSet => {
+  return {
+    title: skillRecord['title'],
+    icon: skillTypeIconMap[skillRecord['title']],
+    skills: skillRecord['skills'],
+    sortOrder: skillRecord['sortOrder']
   }
 }
