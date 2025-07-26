@@ -1,0 +1,41 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.item {
+  display: flex;
+
+  .date {
+    flex: 0 0 30%;
+    margin-right: vars.$space-4;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: vars.$space-3;
+
+    .header {
+      display: inline-flex;
+      justify-content: space-between;
+
+      .title {
+        @include mixins.typography(vars.$font-size-lg, vars.$font-weight-medium);
+      }
+
+      .subtitle {
+        @include mixins.typography(vars.$font-size-lg, vars.$font-weight-medium);
+      }
+    }
+
+    .description {
+      @include mixins.typography(vars.$font-size-base, vars.$font-weight-light);
+      color: vars.$font-tertiary;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: vars.$space-2;
+    }
+  }
+}
