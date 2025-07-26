@@ -1,0 +1,1 @@
+﻿export const pocketbaseUrl = process.env.NEXT_PUBLIC_POCKETBASE_URL
