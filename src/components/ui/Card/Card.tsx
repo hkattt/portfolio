@@ -8,9 +8,9 @@ type CardProps = {
   icon: React.ReactNode;
   children: React.ReactNode;
 }
-export const Card: React.FC<CardProps> = ({ className, title, icon, children }) => {
+export const Card: React.FC<CardProps> = ({ className = '', title, icon, children }) => {
   return (
-    <div className={[styles.card, className].filter(Boolean).join(' ')}>
+    <div className={`${styles.card} ${className}`}>
       <div className={styles.header}>
         {icon}
         <h3 className={styles.title}>{title}</h3>
