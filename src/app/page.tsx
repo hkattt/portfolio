@@ -2,13 +2,12 @@
 
 import React from 'react';
 
-import { Section } from '@/components/Section';
-import { PortfolioItems } from '@/components/PortfolioItems';
+import { Projects } from '@/components/Projects';
+import { Section } from '@/components/ui/Section';
 import { useGetCollection } from '@/services';
-import { pocketbaseUrl } from '@/lib/config';
 import { appConstants } from '@/lib/constants';
-import type { PortfolioItem, Technology } from '@/lib/types';
-import {FaGithub} from "react-icons/fa";
+import { mapProjectToPortfolioItem } from '@/lib/utils';
+import type { PortfolioItem } from '@/lib/types';
 
 const Home: React.FC = () => {
   const {
@@ -25,30 +24,7 @@ const Home: React.FC = () => {
     return <div>Error loading projects: {projectsError}</div>
   }
 
-  const projects: PortfolioItem[] = projectsRecord.map((projectRecord) => (
-    {
-      image: {
-        src: `${pocketbaseUrl}/api/files/projects/${projectRecord["id"]}/${projectRecord["image"]}`,
-        alt: projectRecord['alt'],
-        width: 0,
-        height: 0
-      },
-      title: projectRecord['title'],
-      titleLink: projectRecord['online'],
-      startDate: new Date(projectRecord['date']),
-      endDate: undefined,
-      description: projectRecord['description'],
-      tags: projectRecord['technologies'].map((technology: Technology) => technology.name),
-      extraLinks: [
-        {
-          icon: <FaGithub />,
-          href: projectRecord["github"]
-        }
-      ],
-      onGoing: false,
-      sortOrder: projectRecord['sortOrder']
-    }
-  ));
+  const projects: PortfolioItem[] = projectsRecord.map((projectRecord) => mapProjectToPortfolioItem(projectRecord));
 
   return (
     <div>
@@ -63,9 +39,7 @@ const Home: React.FC = () => {
           - Update image for the social media stuff
         </div>
       </Section>
-      <Section title='FEATURED PROJECTS'>
-        <PortfolioItems portfolioItems={projects} />
-      </Section>
+      <Projects projects={projects} featured />
     </div>
   );
 }

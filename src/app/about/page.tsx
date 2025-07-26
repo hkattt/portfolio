@@ -2,11 +2,13 @@
 
 import React from 'react';
 
-import { Section } from '@/components/Section';
-import { PortfolioItems } from '@/components/PortfolioItems';
+import { Experiences } from '@/components/Experiences';
+import { Education } from '@/components/Education';
+import { Section } from '@/components/ui/Section';
 import { useGetCollection } from '@/services';
 import { appConstants } from '@/lib/constants';
-import type { PortfolioItem, Technology } from '@/lib/types';
+import { mapExperienceToPortfolioItem, mapEducationToPortfolioItem } from '@/lib/utils';
+import type { PortfolioItem } from '@/lib/types';
 
 const About: React.FC = () => {
   const {
@@ -33,32 +35,9 @@ const About: React.FC = () => {
     return <div>Error loading education: {educationError}</div>
   }
 
-  const experiences: PortfolioItem[] = experiencesRecord.map((experienceRecord, index) => (
-    {
-      title: experienceRecord['title'],
-      subtitle: experienceRecord['organisation'].title,
-      startDate: new Date(experienceRecord['startDate']),
-      endDate: experienceRecord['endDate'] ? new Date(experienceRecord['endDate']) : undefined,
-      description: experienceRecord['description'],
-      tags: experienceRecord['technologies'].map((technology: Technology) => technology.name),
-      extraLinks: [],
-      onGoing: true,
-      sortOrder: index
-    }
-  ));
+  const experiences: PortfolioItem[] = experiencesRecord.map(experienceRecord => mapExperienceToPortfolioItem(experienceRecord));
 
-  const education: PortfolioItem[] = educationsRecord.map((educationRecord, index) => (
-    {
-      title: educationRecord['institution'],
-      subtitle: educationRecord['qualification'],
-      startDate: new Date(educationRecord['startDate']),
-      endDate: educationRecord['endDate'] ? new Date(educationRecord['endDate']) : undefined,
-      tags: [],
-      extraLinks: [],
-      onGoing: true,
-      sortOrder: index
-    }
-  ));
+  const education: PortfolioItem[] = educationsRecord.map(educationRecord => mapEducationToPortfolioItem(educationRecord));
 
   return (
     <div>
@@ -67,12 +46,8 @@ const About: React.FC = () => {
           Info about me!
         </div>
       </Section>
-      <Section title='WORK EXPERIENCE'>
-        <PortfolioItems portfolioItems={experiences} />
-      </Section>
-      <Section title='EDUCATION'>
-        <PortfolioItems portfolioItems={education} />
-      </Section>
+      <Experiences experiences={experiences} />
+      <Education education={education} />
     </div>
   );
 };
