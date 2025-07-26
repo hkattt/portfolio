@@ -3,11 +3,9 @@
 import React from 'react';
 
 import { Projects } from '@/components/sections/Projects';
-import { Loading } from '@/components/pages/Loading';
-import { Section } from '@/components/ui/Section';
 import { useGetCollection } from '@/services';
-import { appConstants } from '@/lib/constants';
 import { mapProjectToPortfolioItem } from '@/lib/utils';
+import { appConstants } from '@/lib/constants';
 import type { PortfolioItem } from '@/lib/types';
 
 const Home: React.FC = () => {
@@ -17,30 +15,28 @@ const Home: React.FC = () => {
     isLoading: projectsLoading
   } = useGetCollection(appConstants.collections.projects);
 
-  if (!projectsRecord || projectsLoading) {
-    return <Loading />;
-  }
-
-  if (projectsError) {
-    return <div>Error loading projects: {projectsError}</div>
-  }
-
-  const projects: PortfolioItem[] = projectsRecord.map((projectRecord) => mapProjectToPortfolioItem(projectRecord));
+  const projects: PortfolioItem[] = projectsRecord?.map((projectRecord) => mapProjectToPortfolioItem(projectRecord)) ?? [];
 
   return (
     <div>
-      <Section title='HUGO KAT'>
-        <div>
-          Info about me!
-          TODO:
-          - Update project dates
-          - Add organisation/subtitle link for experiences
-          - Add GitHub and web links for projects
-          - Create loading screen
-          - Update image for the social media stuff
-        </div>
-      </Section>
-      <Projects projects={projects} featured />
+      <h1>Hugo Kat</h1>
+      <div>
+        Info about me!
+        TODO:
+        - Add custom cursor
+        - Update image for the social media stuff
+        - Add skills to the datavase
+        - Create generic error fall-back page
+        - Add loading and error states to sections
+        - Add loading skeletons for sections
+        - Add loading page for first login
+        - Add favicon
+        - Add resume download
+        - Remove the Hugo Kat in nav. Just have a home nav option
+        - Highlight nav option based on current path
+        - Make not found page prettier
+      </div>
+      <Projects projects={projects} isLoading={projectsLoading} error={projectsError} featured />
     </div>
   );
 }

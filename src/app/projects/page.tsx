@@ -1,14 +1,12 @@
 ﻿'use client'
 
 import React from 'react';
-import { FaCode } from "react-icons/fa";
 
 import { Projects } from '@/components/sections/Projects';
 import { Skills } from '@/components/sections/Skills';
-import { Loading } from '@/components/pages/Loading';
 import { useGetCollection } from '@/services';
 import { appConstants } from '@/lib/constants';
-import { mapProjectToPortfolioItem } from '@/lib/utils';
+import {mapProjectToPortfolioItem, mapSkillToSkillSet} from '@/lib/utils';
 import type { PortfolioItem, SkillSet, Tag } from '@/lib/types';
 
 const Home: React.FC = () => {
@@ -18,68 +16,23 @@ const Home: React.FC = () => {
     isLoading: projectsLoading
   } = useGetCollection(appConstants.collections.projects);
 
-  if (!projectsRecord|| projectsLoading) {
-    return <Loading />;
-  }
+  const {
+    data: skillsRecord,
+    error: skillsError,
+    isLoading: skillsLoading,
+  } = useGetCollection(appConstants.collections.skills);
 
-  if (projectsError) {
-    return <div>Error loading projects: {projectsError}</div>
-  }
-
-  const projects: PortfolioItem[] = projectsRecord.map((projectRecord) => mapProjectToPortfolioItem(projectRecord));
-
-  const skills: Tag[] = [
-    { text: 'TypeScript' },
-    { text: 'C' },
-    { text: 'C++' }
-  ];
-
-  const skills2: Tag[] = [
-    { text: 'TypeScript' },
-    { text: 'C' },
-    { text: 'C++' },
-    { text: 'TypeScript' },
-    { text: 'C' },
-    { text: 'C++' }
-  ];
-
-  const skills3: Tag[] = [
-    { text: 'TypeScript' },
-    { text: 'C' },
-    { text: 'C++' },
-    { text: 'TypeScript' },
-    { text: 'C' },
-    { text: 'C++' },
-    { text: 'TypeScript' },
-    { text: 'C' },
-    { text: 'C++' },
-    { text: 'TypeScript' },
-    { text: 'C' },
-    { text: 'C++' }
-  ];
-
-  const skillSets: SkillSet[] = [
-    {
-      title: 'Programming',
-      icon: <FaCode />,
-      skills: skills
-    },
-    {
-      title: 'DevOps',
-      icon: <FaCode />,
-      skills: skills2
-    },
-    {
-      title: 'URk',
-      icon: <FaCode />,
-      skills: skills3
-    }
-  ];
+  const projects: PortfolioItem[] = projectsRecord?.map(projectRecord => mapProjectToPortfolioItem(projectRecord)) ?? [];
+  const skillSets: SkillSet[] = skillsRecord?.map(skillsRecord => mapSkillToSkillSet(skillsRecord)) ?? [];
 
   return (
     <div>
-      <Projects projects={projects} featured={false} />
-      <Skills skillSets={skillSets} />
+      <h1>Projects</h1>
+      <div>
+        Summary about my interests and projects
+      </div>
+      <Projects projects={projects} featured={false} isLoading={projectsLoading} error={projectsError} />
+      <Skills skillSets={skillSets} isLoading={skillsLoading} error={skillsError} />
     </div>
   );
 }
