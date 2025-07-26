@@ -1,0 +1,13 @@
+﻿@use '@/styles/variables' as vars;
+
+.skeleton {
+  background: vars.$background-tertiary;
+  border-radius: vars.$border-radius-lg;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 0.4; }
+  100% { opacity: 0.8; }
+}
