@@ -1,0 +1,18 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: vars.$space-12;
+  margin-bottom: vars.$space-20;
+
+  .logo {
+    @include mixins.typography(vars.$font-size-lg, vars.$font-weight-bold);
+  }
+
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+}
