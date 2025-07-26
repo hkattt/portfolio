@@ -27,3 +27,4 @@ My website was inspired by various personal portfolios. Most notably:
 2. [Charan Ravi](https://charanravi.com/)
 3. [Stefan Zweifel](https://stefanzweifel.dev/about/)
 4. [Aditya Kuma](https://www.adikuma.com/)
+5. [Matthew Kwong](https://www.mwskwong.com/skills)
