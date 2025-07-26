@@ -5,13 +5,30 @@
   gap: vars.$space-2;
   align-items: center;
   justify-content: center;
-  padding: vars.$space-2;
+  padding: vars.$space-2 vars.$space-4;
   border-radius: vars.$border-radius-lg;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.primaryButton {
+  color: vars.$background-primary;
+  background: vars.$accent-primary;
+}
+
+.iconButton {
+  padding: vars.$space-2;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
-    background: vars.$background-secondary;
     cursor: pointer;
+  }
+
+  .linkButton:hover {
+    background: vars.$background-tertiary;
+  }
+
+  .primaryButton:hover {
+    background: rgba(vars.$accent-primary, 0.75);
   }
 }
