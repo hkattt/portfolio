@@ -1,0 +1,7 @@
+﻿@use '@/styles/variables' as vars;
+
+.divider {
+  display: block;
+  height: 1px;
+  margin: vars.$space-4 0;
+}
