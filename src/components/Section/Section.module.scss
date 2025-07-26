@@ -1,0 +1,25 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.section {
+  margin-bottom: vars.$space-20;
+
+  .header {
+    display: inline-flex;
+    gap: vars.$space-2;
+    align-items: center;
+    margin-bottom: vars.$space-6;
+
+    .bar {
+      background: vars.$accent-primary;
+      width: vars.$space-6;
+      height: 2px;
+    }
+
+    .title {
+      @include mixins.typography(vars.$font-size-sm, vars.$font-weight-semibold);
+      color: vars.$font-quaternary;
+      margin-bottom: 0;
+    }
+  }
+}
