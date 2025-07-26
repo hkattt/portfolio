@@ -11,8 +11,8 @@ export const Footer: React.FC = () => {
     <footer className={styles.footer}>
       <p>© 2025 Hugo Kat. All rights reserved.</p>
       <div>
-        <LinkButton href={appConstants.socialUrls.githubUrl} icon={<FaGithub />} />
-        <LinkButton href={appConstants.socialUrls.linkedinUrl} icon={<FaLinkedin />} />
+        <LinkButton href={appConstants.socialUrls.github} icon={<FaGithub />} />
+        <LinkButton href={appConstants.socialUrls.linkedin} icon={<FaLinkedin />} />
         <LinkButton href={`mailto:${appConstants.socialUrls.emailAddress}`} icon={<FaEnvelope />} />
       </div>
     </footer>
