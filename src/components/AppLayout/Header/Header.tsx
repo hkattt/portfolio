@@ -1,7 +1,7 @@
 ﻿import React from 'react';
-import Link from 'next/link';
 
 import { LinkButton } from '@/components/ui/Button';
+import { SmartLink} from '@/components/ui/SmartLink';
 import { appConstants } from '@/lib/constants';
 
 import styles from "./Header.module.scss";
@@ -15,9 +15,9 @@ export const Header: React.FC = () => {
         </LinkButton>
       </div>
       <nav>
-        <Link href={appConstants.routes.about} rel='noopener noreferrer'>About</Link>
-        <Link href={appConstants.routes.projects} rel='noopener noreferrer'>Projects</Link>
-        <Link href={appConstants.routes.contact} rel='noopener noreferrer'>Contact</Link>
+        <SmartLink href={appConstants.routes.about}>About</SmartLink>
+        <SmartLink href={appConstants.routes.projects}>Projects</SmartLink>
+        <SmartLink href={appConstants.routes.contact}>Contact</SmartLink>
       </nav>
     </header>
   );
