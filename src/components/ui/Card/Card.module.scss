@@ -1,0 +1,19 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.card {
+  padding: vars.$space-4;
+  border: 1px solid vars.$background-tertiary;
+  border-radius: vars.$border-radius-lg;
+
+  .header {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: vars.$space-4;
+    margin-bottom: vars.$space-4;
+
+    .title {
+      @include mixins.typography(vars.$font-size-lg, vars.$font-weight-medium);
+    }
+  }
+}
