@@ -11,13 +11,14 @@ type Constants = {
 export const appConstants: Constants = {
   socialUrls: {
     emailAddress: 'hugo.kat3@gmail.com',
-    github:    'https://github.com/hkattt',
-    linkedin:  'https://www.linkedin.com/in/hugo-kat'
+    github:       'https://github.com/hkattt',
+    linkedin:     'https://www.linkedin.com/in/hugo-kat'
   },
   collections: {
-    projects: 'projects',
+    projects:    'projects',
     experiences: 'experiences',
-    education: 'education',
+    education:   'education',
+    skills:      'skills',
   },
   routes: {
     home:     '/',

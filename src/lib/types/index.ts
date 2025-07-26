@@ -1,5 +1,9 @@
 ﻿import React from 'react';
 
+export type Direction = 'horizontal' | 'vertical';
+export type ButtonType = 'primary' | 'link';
+export type Placement = 'left' | 'center' | 'right';
+
 export type Link = {
   icon: React.ReactNode;
   href: string;
@@ -25,6 +29,7 @@ export type SkillSet = {
   title: string;
   icon: React.ReactNode;
   skills: Tag[];
+  sortOrder: number;
 }
 
 export type PortfolioItem = {
