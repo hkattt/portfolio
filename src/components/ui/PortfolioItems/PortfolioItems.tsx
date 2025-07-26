@@ -1,8 +1,9 @@
 ﻿import React from 'react';
 
 import { PortfolioItem } from './PortfolioItem';
-import { Divider } from '@/components/ui/Divider';
 import type { PortfolioItem as PortfolioItemType } from '@/lib/types';
+
+import styles from './PortfolioItems.module.scss'
 
 type PortfolioItemsProps = {
   portfolioItems: PortfolioItemType[];
@@ -10,13 +11,10 @@ type PortfolioItemsProps = {
 
 export const PortfolioItems: React.FC<PortfolioItemsProps> = ({ portfolioItems }) => {
   return (
-    <div>
+    <div className={styles.items}>
       {
         portfolioItems.map((portfolioItem, index) => (
-          <div key={index}>
-            <PortfolioItem portfolioItem={portfolioItem} />
-            { index < portfolioItems.length - 1 && <Divider /> }
-          </div>
+          <PortfolioItem key={index} portfolioItem={portfolioItem} />
         ))
       }
     </div>

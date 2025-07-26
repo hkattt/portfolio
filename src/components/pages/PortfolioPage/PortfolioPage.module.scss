@@ -1,0 +1,11 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.portfolio {
+  text-align: center;
+
+  .title {
+    @include mixins.typography(vars.$font-size-2xl, vars.$font-weight-semibold);
+    margin-bottom: vars.$space-4;
+  }
+}
