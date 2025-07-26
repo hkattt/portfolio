@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: vars.$space-2;
-  border-radius: 360px;
+  border-radius: vars.$border-radius-lg;
 }
 
 @media (hover: hover) and (pointer: fine) {
