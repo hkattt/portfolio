@@ -2,7 +2,7 @@
 
 import { Card } from '@/components/ui/Card/Card';
 import { Tags } from '@/components/ui/Tags';
-import { Section } from '../ui/Section';
+import { Section } from '../../ui/Section';
 import type { SkillSet } from '@/lib/types';
 
 import styles from './Skills.module.scss';

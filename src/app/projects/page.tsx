@@ -3,8 +3,9 @@
 import React from 'react';
 import { FaCode } from "react-icons/fa";
 
-import { Projects } from '@/components/Projects';
-import { Skills } from '@/components/Skills';
+import { Projects } from '@/components/sections/Projects';
+import { Skills } from '@/components/sections/Skills';
+import { Loading } from '@/components/pages/Loading';
 import { useGetCollection } from '@/services';
 import { appConstants } from '@/lib/constants';
 import { mapProjectToPortfolioItem } from '@/lib/utils';
@@ -18,7 +19,7 @@ const Home: React.FC = () => {
   } = useGetCollection(appConstants.collections.projects);
 
   if (!projectsRecord|| projectsLoading) {
-    return <div>Loading...</div>
+    return <Loading />;
   }
 
   if (projectsError) {

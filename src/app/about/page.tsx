@@ -2,8 +2,9 @@
 
 import React from 'react';
 
-import { Experiences } from '@/components/Experiences';
-import { Education } from '@/components/Education';
+import { Experiences } from '@/components/sections/Experiences';
+import { Education } from '@/components/sections/Education';
+import { Loading } from '@/components/pages/Loading';
 import { Section } from '@/components/ui/Section';
 import { useGetCollection } from '@/services';
 import { appConstants } from '@/lib/constants';
@@ -24,7 +25,7 @@ const About: React.FC = () => {
   } = useGetCollection(appConstants.collections.education);
 
   if (!experiencesRecord || !educationsRecord || experiencesLoading || educationsLoading) {
-    return <div>Loading...</div>
+    return <Loading />;
   }
 
   if (experiencesError) {

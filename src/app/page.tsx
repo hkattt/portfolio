@@ -2,7 +2,8 @@
 
 import React from 'react';
 
-import { Projects } from '@/components/Projects';
+import { Projects } from '@/components/sections/Projects';
+import { Loading } from '@/components/pages/Loading';
 import { Section } from '@/components/ui/Section';
 import { useGetCollection } from '@/services';
 import { appConstants } from '@/lib/constants';
@@ -16,8 +17,8 @@ const Home: React.FC = () => {
     isLoading: projectsLoading
   } = useGetCollection(appConstants.collections.projects);
 
-  if (!projectsRecord|| projectsLoading) {
-    return <div>Loading...</div>
+  if (!projectsRecord || projectsLoading) {
+    return <Loading />;
   }
 
   if (projectsError) {
