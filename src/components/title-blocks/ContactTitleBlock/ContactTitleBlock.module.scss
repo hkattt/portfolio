@@ -1,0 +1,11 @@
+﻿@use '@/styles/variables' as vars;
+
+.description {
+  margin-bottom: vars.$space-4;
+}
+
+.socials {
+  display: flex;
+  gap: vars.$space-4;
+  justify-content: center;
+}
