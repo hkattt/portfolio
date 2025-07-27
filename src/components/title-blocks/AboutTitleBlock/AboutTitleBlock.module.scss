@@ -1,0 +1,16 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: vars.$space-4;
+
+  img {
+    border-radius: vars.$border-radius-lg;
+  }
+
+  @include mixins.respond-to-max('sm') {
+    grid-template-columns: 1fr;
+  }
+}

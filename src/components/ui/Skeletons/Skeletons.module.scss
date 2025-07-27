@@ -1,0 +1,6 @@
+﻿@use '@/styles/variables' as vars;
+
+.skeletons {
+  display: flex;
+  gap: vars.$space-4;
+}

@@ -1,0 +1,1 @@
+﻿export { HomeTitleBlock } from  './HomeTitleBlock';

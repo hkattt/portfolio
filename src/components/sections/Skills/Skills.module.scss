@@ -1,0 +1,17 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.skills {
+  column-count: 2;
+  column-gap: vars.$space-4;
+
+  .skill {
+    margin-bottom: vars.$space-4;
+    break-inside: avoid;
+  }
+
+  @include mixins.respond-to-max('sm') {
+    column-count: 1;
+  }
+}
+

@@ -8,28 +8,48 @@ Hey there! This is the repository for my [portfolio website](https://hugokat.dev
 - [NextJS](https://nextjs.org/docs/app/getting-started/installation)
 - [Pocketbase](https://pocketbase.io/docs/) and [JavaScript SDK](https://github.com/pocketbase/js-sdk)
 - [Sass](https://sass-lang.com/install/)
-- [Material icons](https://mui.com/material-ui/material-icons/?query=moon&theme=Outlined)
+- [SWR](https://www.npmjs.com/package/swr)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## How to run
+You can use either Yarn or npm to run the project, depending on your preference.  
+
+### Development Build
+
+Using Yarn:
+```
+yarn dev
+```
+
+Using npm:
+```
+npm run dev
+```
+
+### Production Build
+Using Yarn:
+```
+yarn build
+yarn start
+```
+
+Using npm:
+```
+npm run build
+npm start
+```
+
+> Note: To fetch data from the Pocketbase database, you must supply the Pocketbase host URL as an environment variable.
 
 ## Assets
 The following resources were used in the creation of this website:
-- Skill/Technology Icons from [Simple Icons](https://simpleicons.org/)
-- UI icons from [Google Material Icons](https://fonts.google.com/icons)
 - [Nord Theme](https://www.nordtheme.com/docs/colors-and-palettes) colour palette
-- [Inter typeface](https://rsms.me/inter/)
-- Codepen filter generator by [Barrett Sonntag](https://codepen.io/sosuke)
-
+- [Space Grotesk typeface](https://fonts.google.com/specimen/Space+Grotesk)
 
 ## Inspiration
 My website was inspired by various personal portfolios. Most notably:
-1. [Ayda Oz](https://www.aydaoz.co/)
-1. [Brittany Chiang](https://brittanychiang.com/)
-2. [Annie Bombanie](https://anniebombanie.com/)
-4. [tkat0](https://www.tkat0.dev/en/)
-5. [Adenekan](https://www.codewonders.dev/)
-7. [Ciprian Craciun](https://stefaniq.com/)
-8. [Matthew Kwong](https://mwskwong.com/)
-8. [Tobias Ahlin](https://tobiasahlin.com)
-9. [Cassie Evans](https://www.cassie.codes/)
-10. [Amie Chen](https://amie-chen.com/)
-11. [Troy Story Games](https://www.troystorygames.com/)
-12. [Oluwadare Oluwaseyi](https://www.seyi.dev/)
+1. [Jien Weng](https://www.jienweng.com/)
+2. [Charan Ravi](https://charanravi.com/)
+3. [Stefan Zweifel](https://stefanzweifel.dev/about/)
+4. [Aditya Kuma](https://www.adikuma.com/)
+5. [Matthew Kwong](https://www.mwskwong.com/skills)

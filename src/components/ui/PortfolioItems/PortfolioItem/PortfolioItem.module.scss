@@ -1,0 +1,50 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.item {
+  display: flex;
+  gap: vars.$space-2;
+  transition: all ease-in-out 0.3s;
+  margin-bottom: vars.$space-2;
+
+  .date {
+    flex: 0 0 30%;
+    margin-right: vars.$space-4;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: vars.$space-3;
+
+    .header {
+      display: inline-flex;
+      align-self: stretch;
+      justify-content: space-between;
+
+      .title {
+        @include mixins.typography(vars.$font-size-lg, vars.$font-weight-medium);
+      }
+
+      .subtitle {
+        @include mixins.typography(vars.$font-size-lg, vars.$font-weight-medium);
+      }
+    }
+
+    .description {
+      @include mixins.typography(vars.$font-size-base, vars.$font-weight-light);
+      color: vars.$font-tertiary;
+    }
+  }
+
+  @include mixins.respond-to-max('md') {
+    flex-direction: column;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .item:hover {
+    transform: translateY(- vars.$space-1);
+  }
+}

@@ -1,0 +1,7 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.date {
+  @include mixins.typography(vars.$font-size-sm, vars.$font-weight-light);
+  color: vars.$font-quaternary;
+}

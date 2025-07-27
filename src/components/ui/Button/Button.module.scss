@@ -1,0 +1,47 @@
+﻿@use '@/styles/variables' as vars;
+
+.button  {
+  display: inline-flex;
+  gap: vars.$space-2;
+  align-items: center;
+  justify-content: center;
+  padding: vars.$space-2 vars.$space-4;
+  border-radius: vars.$border-radius-lg;
+  transition: background-color, outline-color, color 0.3s ease-in-out;
+}
+
+.defaultButton {
+  outline: vars.$background-tertiary solid 1px;
+}
+
+.primaryButton {
+  color: vars.$background-primary;
+  background: vars.$accent-primary;
+}
+
+.linkButton:not(.iconButton) {
+  margin-left: - vars.$space-4;
+}
+
+.iconButton {
+  padding: vars.$space-2;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    cursor: pointer;
+  }
+
+  .defaultButton:hover {
+    outline-color: vars.$accent-primary;
+    color: vars.$accent-primary
+  }
+
+  .linkButton:hover {
+    background: vars.$background-tertiary;
+  }
+
+  .primaryButton:hover {
+    background: rgba(vars.$accent-primary, 0.75);
+  }
+}

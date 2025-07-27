@@ -1,0 +1,12 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: vars.$space-4;
+
+  @include mixins.respond-to-max('md') {
+    flex-direction: column;
+  }
+}

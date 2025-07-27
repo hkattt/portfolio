@@ -1,0 +1,1 @@
+﻿export { Education } from './Education';

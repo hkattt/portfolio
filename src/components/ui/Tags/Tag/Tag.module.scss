@@ -1,0 +1,16 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: vars.$space-1;
+  color: vars.$accent-primary;
+  background: rgba(vars.$accent-primary, 0.1);
+  border-radius: vars.$border-radius-md;
+
+  .text {
+    @include mixins.typography(vars.$font-size-sm, vars.$font-weight-medium);
+  }
+}

@@ -1,0 +1,12 @@
+﻿@use '@/styles/variables' as vars;
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-2;
+
+  .buttons {
+    display: inline-flex;
+    gap: vars.$space-2;
+  }
+}

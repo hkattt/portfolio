@@ -1,0 +1,7 @@
+﻿@use '@/styles/variables' as vars;
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: vars.$space-2;
+}

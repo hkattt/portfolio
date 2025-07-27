@@ -1,0 +1,16 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.description {
+  margin-bottom: vars.$space-4;
+}
+
+.socials {
+  display: flex;
+  gap: vars.$space-4;
+  justify-content: center;
+
+  @include mixins.respond-to-max('sm') {
+    flex-direction: column;
+  }
+}

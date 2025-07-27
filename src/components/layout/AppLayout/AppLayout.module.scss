@@ -1,0 +1,14 @@
+﻿@use '@/styles/variables' as vars;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 44rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: vars.$space-8;
+
+  main {
+    flex: 1;
+  }
+}

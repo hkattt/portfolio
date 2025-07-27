@@ -1,0 +1,19 @@
+﻿@use 'sass:map';
+@use '@/styles/variables' as vars;
+
+@mixin typography($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin respond-to-max($breakpoint) {
+  $size: map.get(vars.$breakpoints, $breakpoint);
+
+  @if $size {
+    @media (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "No value found for breakpoint `#{$breakpoint}`.";
+  }
+}
