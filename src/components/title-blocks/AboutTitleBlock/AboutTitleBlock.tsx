@@ -1,11 +1,10 @@
 ﻿import React from 'react';
-import Image from 'next/image';
 
 import { Error } from '@/components/Error';
 import { TitleBlock } from '@/components/ui/TitleBlock';
-import { Skeleton } from '@/components/ui/Skeletons/Skeleton';
 import { Profile } from '@/lib/types';
 
+import { ProfilePicture } from './ProfilePicture';
 import styles from './AboutTitleBlock.module.scss';
 
 type AboutTitleBlockProps = {
@@ -38,11 +37,7 @@ export const AboutTitleBlock: React.FC<AboutTitleBlockProps> = ({ profile, isLoa
 
           During my free time, I enjoy playing video games, watching TV shows, reading (occasionally...), and playing football.
         </p>
-        {
-          (!profile || isLoading)
-            ? <Skeleton width={300} height={400} />
-            : <Image src={profile.image.src} alt={profile.image.alt} width={300} height={300} layout='responsive' />
-        }
+        <ProfilePicture profile={profile} isProfileLoading={isLoading} />
       </div>
     </TitleBlock>
   );
