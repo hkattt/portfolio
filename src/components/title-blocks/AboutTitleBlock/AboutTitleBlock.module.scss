@@ -1,0 +1,11 @@
+﻿@use '@/styles/variables' as vars;
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: vars.$space-4;
+
+  img {
+    border-radius: vars.$border-radius-lg;
+  }
+}
