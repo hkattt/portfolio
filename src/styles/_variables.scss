@@ -93,3 +93,13 @@ $border-radius-sm:   4px;
 $border-radius-md:   8px;
 $border-radius-lg:   16px;
 $border-radius-full: 9999px; /* for circles/pills */
+
+/* -------------------------- */
+/* BREAKPOINT TOKENS          */
+/* -------------------------- */
+$breakpoints: (
+  'sm': 480px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1440px
+);

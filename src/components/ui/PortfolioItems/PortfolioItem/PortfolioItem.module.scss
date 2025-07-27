@@ -3,7 +3,9 @@
 
 .item {
   display: flex;
+  gap: vars.$space-2;
   transition: all ease-in-out 0.3s;
+  margin-bottom: vars.$space-2;
 
   .date {
     flex: 0 0 30%;
@@ -34,6 +36,10 @@
       @include mixins.typography(vars.$font-size-base, vars.$font-weight-light);
       color: vars.$font-tertiary;
     }
+  }
+
+  @include mixins.respond-to-max('md') {
+    flex-direction: column;
   }
 }
 
