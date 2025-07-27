@@ -30,7 +30,7 @@ export const AboutTitleBlock: React.FC<AboutTitleBlockProps> = ({ profile, isLoa
 
           <br /><br />
 
-          Along the way, I taughtmyself web-development which eventually led to working as a software developer
+          Along the way, I taught myself web-development which eventually led to working as a software developer
           at GovTEAMS.
 
           <br /><br />
