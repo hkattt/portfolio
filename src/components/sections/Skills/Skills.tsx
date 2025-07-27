@@ -1,10 +1,10 @@
 ﻿import React from 'react';
 
-import { Error } from '@/components/Error';
 import { Section } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
 import { Skeleton } from '@/components/ui/Skeletons/Skeleton';
 import { Tags } from '@/components/ui/Tags';
+import { Error } from '@/components/ui/Error';
 import type { SkillSet } from '@/lib/types';
 
 import styles from './Skills.module.scss';

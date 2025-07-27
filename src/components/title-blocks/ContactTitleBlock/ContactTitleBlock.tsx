@@ -17,7 +17,7 @@ export const ContactTitleBlock: React.FC = () => {
       <div className={styles.socials}>
         <LinkButton href={appConstants.socialUrls.github} icon={<FaGithub />}>GitHub</LinkButton>
         <LinkButton href={appConstants.socialUrls.linkedin} icon={<FaLinkedinIn />}>LinkedIn</LinkButton>
-        <LinkButton href={appConstants.socialUrls.emailAddress} icon={<FaEnvelope />}>{appConstants.socialUrls.emailAddress}</LinkButton>
+        <LinkButton href={`mailto:${appConstants.socialUrls.emailAddress}`} icon={<FaEnvelope />}>{appConstants.socialUrls.emailAddress}</LinkButton>
       </div>
     </TitleBlock>
   );

@@ -1,9 +1,9 @@
 ﻿import React from 'react';
 
-import { Error } from '@/components/Error';
 import { Section } from '@/components/ui/Section';
 import { PortfolioItems } from '@/components/ui/PortfolioItems';
 import { Skeletons } from '@/components/ui/Skeletons';
+import { Error } from '@/components/ui/Error';
 import type { PortfolioItem as PortfolioItemType } from '@/lib/types';
 
 type EducationProps = {

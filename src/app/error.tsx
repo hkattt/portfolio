@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { ResultLayout } from '@/components/layout';
-import { Error as ErrorComponent } from '@/components/Error';
 import { Button, LinkButton } from '@/components/ui/Button';
+import { Error as ErrorComponent } from '@/components/ui/Error';
 import { appConstants } from '@/lib/constants';
 
 import styles from './error.module.scss';
