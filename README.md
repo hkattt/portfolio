@@ -12,9 +12,34 @@ Hey there! This is the repository for my [portfolio website](https://hugokat.dev
 - [React Icons](https://react-icons.github.io/react-icons/)
 
 ## How to run
-TODO: EXPLAIN HOW TO RUN THE PROJECT
-e.g. `yarn run dev` to run it locally
-e.g. create `.env` file with connections to the pocketbase database.
+You can use either Yarn or npm to run the project, depending on your preference.  
+
+### Development Build
+
+Using Yarn:
+```
+yarn dev
+```
+
+Using npm:
+```
+npm run dev
+```
+
+### Production Build
+Using Yarn:
+```
+yarn build
+yarn start
+```
+
+Using npm:
+```
+npm run build
+npm start
+```
+
+> Note: To fetch data from the Pocketbase database, you must supply the Pocketbase host URL as an environment variable.
 
 ## Assets
 The following resources were used in the creation of this website:
