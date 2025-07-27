@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 
+import { NavigationBar } from './NavigationBar';
 import { LinkButton } from '@/components/ui/Button';
-import { SmartLink} from '@/components/ui/SmartLink';
 import { appConstants } from '@/lib/constants';
 
 import styles from "./Header.module.scss";
@@ -14,11 +14,7 @@ export const Header: React.FC = () => {
           <span className={styles.logo}>Hugo Kat</span>
         </LinkButton>
       </div>
-      <nav>
-        <SmartLink href={appConstants.routes.about}>About</SmartLink>
-        <SmartLink href={appConstants.routes.projects}>Projects</SmartLink>
-        <SmartLink href={appConstants.routes.contact}>Contact</SmartLink>
-      </nav>
+      <NavigationBar />
     </header>
   );
 };
