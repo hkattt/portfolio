@@ -2,11 +2,11 @@
 
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
-import { Error } from '@/components/Error';
 import { Section } from '@/components/ui/Section';
 import { PortfolioItems } from '@/components/ui/PortfolioItems';
 import { Skeletons } from '@/components/ui/Skeletons';
 import { LinkButton } from '@/components/ui/Button';
+import { Error } from '@/components/ui/Error';
 import { appConstants } from '@/lib/constants';
 import type { PortfolioItem as PortfolioItemType } from '@/lib/types';
 

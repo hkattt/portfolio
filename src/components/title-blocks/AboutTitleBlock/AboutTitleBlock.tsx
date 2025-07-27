@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 
-import { Error } from '@/components/Error';
 import { TitleBlock } from '@/components/ui/TitleBlock';
+import { Error } from '@/components/ui/Error';
 import { Profile } from '@/lib/types';
 
 import { ProfilePicture } from './ProfilePicture';
