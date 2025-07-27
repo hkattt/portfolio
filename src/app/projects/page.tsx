@@ -2,12 +2,12 @@
 
 import React from 'react';
 
-import { Projects } from '@/components/sections/Projects';
-import { Skills } from '@/components/sections/Skills';
+import { ProjectsTitleBlock } from '@/components/title-blocks';
+import { Projects, Skills } from '@/components/sections';
 import { useGetCollection } from '@/services';
 import { appConstants } from '@/lib/constants';
 import {mapProjectToPortfolioItem, mapSkillToSkillSet} from '@/lib/utils';
-import type { PortfolioItem, SkillSet, Tag } from '@/lib/types';
+import type { PortfolioItem, SkillSet } from '@/lib/types';
 
 const Home: React.FC = () => {
   const {
@@ -27,10 +27,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <h1>Projects</h1>
-      <div>
-        Summary about my interests and projects
-      </div>
+      <ProjectsTitleBlock />
       <Projects projects={projects} featured={false} isLoading={projectsLoading} error={projectsError} />
       <Skills skillSets={skillSets} isLoading={skillsLoading} error={skillsError} />
     </div>
