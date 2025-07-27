@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     siteName: 'Hugo Kat',
     images: [
       {
-        url: '/hugo.png',
-        width: 843,
-        height: 1124
+        url: '/social-splash.png',
+        width: 500,
+        height: 400
       }
     ],
     locale: 'en_GB',
