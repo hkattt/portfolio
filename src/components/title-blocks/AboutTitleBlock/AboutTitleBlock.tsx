@@ -23,8 +23,20 @@ export const AboutTitleBlock: React.FC<AboutTitleBlockProps> = ({ profile, isLoa
     <TitleBlock title='About'>
       <div className={styles.about}>
         <p>
-          Info about me!
-          I'm a mathematics and computing student. Currently researching on cooperative AI, and freelancing as a System & Website Developer while pursuing my degree.
+          I am a fifth-year computer science student at the ANU, expected to graduate at the end of 2025.
+
+          <br /><br />
+
+          During my studies, I have specalised in computer systems and cyber security.
+
+          <br /><br />
+
+          Along the way, I taughtmyself web-development which eventually led to working as a software developer
+          at GovTEAMS.
+
+          <br /><br />
+
+          During my free time, I enjoy playing video games, watching TV shows, reading (occasionally...), and playing football.
         </p>
         {
           (!profile || isLoading)

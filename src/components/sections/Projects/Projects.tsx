@@ -29,7 +29,7 @@ export const Projects: React.FC<ProjectsProps> = ({ projects, isLoading, error, 
   projects.sort((a, b) => a.sortOrder - b.sortOrder);
 
   return (
-    <Section title='PROJECTS'>
+    <Section title='FEATURED PROJECTS'>
       {
         isLoading
           ? <Skeletons n={2} width='100%' height={150} />

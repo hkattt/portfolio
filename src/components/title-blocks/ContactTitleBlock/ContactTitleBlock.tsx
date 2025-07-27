@@ -11,7 +11,8 @@ export const ContactTitleBlock: React.FC = () => {
   return (
     <TitleBlock title='Contact'>
       <p className={styles.description}>
-        I am always eager to have a chat about tech and other things
+        I’m always up for chatting about computers, games, or cool projects to work on together.
+        If you’re curious about something I’ve built or just want to say hi, feel free to reach out on whatever platform works best for you
       </p>
       <div className={styles.socials}>
         <LinkButton href={appConstants.socialUrls.github} icon={<FaGithub />}>GitHub</LinkButton>
