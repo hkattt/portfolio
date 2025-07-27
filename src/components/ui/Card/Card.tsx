@@ -5,7 +5,7 @@ import styles from './Card.module.scss';
 type CardProps = {
   className?: string;
   title: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   children: React.ReactNode;
 }
 export const Card: React.FC<CardProps> = ({ className = '', title, icon, children }) => {

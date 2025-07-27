@@ -3,6 +3,7 @@
 
 .item {
   display: flex;
+  transition: all ease-in-out 0.3s;
 
   .date {
     flex: 0 0 30%;
@@ -33,5 +34,11 @@
       @include mixins.typography(vars.$font-size-base, vars.$font-weight-light);
       color: vars.$font-tertiary;
     }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .item:hover {
+    transform: translateY(- vars.$space-1);
   }
 }
