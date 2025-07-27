@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 
-import styles from './ResultPage.module.scss';
+import styles from './ResultLayout.module.scss';
 
 type ResultPageProps = {
   title: string;
@@ -8,9 +8,9 @@ type ResultPageProps = {
   icon?: React.ReactNode;
   children?: React.ReactNode;
 }
-export const ResultPage: React.FC<ResultPageProps> = ({ title, subtitle, icon, children }) => {
+export const ResultLayout: React.FC<ResultPageProps> = ({ title, subtitle, icon, children }) => {
   return (
-    <div className={styles.result}>
+    <div>
       {icon}
       { subtitle && <h2 className={styles.subtitle}>{subtitle}</h2> }
       <h1 className={styles.title}>{title}</h1>

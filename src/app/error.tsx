@@ -1,7 +1,7 @@
 ﻿'use client'
 
 import React from 'react';
-import { ResultPage } from '@/components/pages/ResultPage';
+import { ResultLayout } from '@/components/layout';
 import { Error as ErrorComponent } from '@/components/Error';
 import { Button, LinkButton } from '@/components/ui/Button';
 import { appConstants } from '@/lib/constants';
@@ -15,7 +15,7 @@ type ErrorProps = {
 
 const Error: React.FC<ErrorProps> = ({ error, reset }) => {
   return (
-    <ResultPage title='Sorry, we encountered an error'>
+    <ResultLayout title='Sorry, we encountered an error'>
       <div className={styles.error}>
         <ErrorComponent message='' error={error} />
         <div className={styles.buttons}>
@@ -27,7 +27,7 @@ const Error: React.FC<ErrorProps> = ({ error, reset }) => {
           </LinkButton>
         </div>
       </div>
-    </ResultPage>
+    </ResultLayout>
   );
 };
 

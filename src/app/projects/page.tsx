@@ -6,7 +6,7 @@ import { ProjectsTitleBlock } from '@/components/title-blocks';
 import { Projects, Skills } from '@/components/sections';
 import { useGetCollection } from '@/services';
 import { appConstants } from '@/lib/constants';
-import {mapProjectToPortfolioItem, mapSkillToSkillSet} from '@/lib/utils';
+import { mapProjectToPortfolioItem, mapSkillToSkillSet } from '@/lib/utils';
 import type { PortfolioItem, SkillSet } from '@/lib/types';
 
 const Home: React.FC = () => {

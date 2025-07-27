@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Space_Grotesk } from 'next/font/google';
 
-import { AppLayout } from "@/components/AppLayout";
+import { AppLayout } from '@/components/layout';
 import '@/styles/globals.scss';
 
 const spaceGrotest = Space_Grotesk({
