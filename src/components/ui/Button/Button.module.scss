@@ -7,7 +7,11 @@
   justify-content: center;
   padding: vars.$space-2 vars.$space-4;
   border-radius: vars.$border-radius-lg;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color, outline-color, color 0.3s ease-in-out;
+}
+
+.defaultButton {
+  outline: vars.$background-tertiary solid 1px;
 }
 
 .primaryButton {
@@ -26,6 +30,11 @@
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
     cursor: pointer;
+  }
+
+  .defaultButton:hover {
+    outline-color: vars.$accent-primary;
+    color: vars.$accent-primary
   }
 
   .linkButton:hover {

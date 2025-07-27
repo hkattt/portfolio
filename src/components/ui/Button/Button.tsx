@@ -11,8 +11,15 @@ type ButtonProps = {
   iconPlacement?: Placement;
   onClick?: () => void;
 }
-export const Button: React.FC<ButtonProps> = ({ type = 'link', children, icon, iconPlacement, onClick }) => {
-  const typeClass: string = type === 'link' ? styles.linkButton : styles.primaryButton;
+
+const buttonTypeClassMap: Record<ButtonType, string> = {
+  'default': styles.defaultButton,
+  'link':    styles.linkButton,
+  'primary': styles.primaryButton,
+}
+
+export const Button: React.FC<ButtonProps> = ({ type = 'default', children, icon, iconPlacement, onClick }) => {
+  const typeClass: string = buttonTypeClassMap[type];
   const iconClass: string = children ? '' : styles.iconButton;
 
   return (

@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 
 export type Direction = 'horizontal' | 'vertical';
-export type ButtonType = 'primary' | 'link';
+export type ButtonType = 'primary' | 'default' | 'link';
 export type Placement = 'left' | 'center' | 'right';
 
 export type Link = {
