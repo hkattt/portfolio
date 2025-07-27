@@ -15,6 +15,10 @@
   background: vars.$accent-primary;
 }
 
+.linkButton:not(.iconButton) {
+  margin-left: - vars.$space-4;
+}
+
 .iconButton {
   padding: vars.$space-2;
 }
