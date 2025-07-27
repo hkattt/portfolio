@@ -9,7 +9,7 @@
 
   .header {
     display: inline-flex;
-    justify-content: space-between;
+    align-items: center;
     gap: vars.$space-4;
     margin-bottom: vars.$space-4;
 
