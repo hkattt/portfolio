@@ -2,7 +2,7 @@
 
 import { Error } from '@/components/Error';
 import { Section } from '@/components/ui/Section';
-import { Card } from '@/components/ui/Card/Card';
+import { Card } from '@/components/ui/Card';
 import { Skeleton } from '@/components/ui/Skeletons/Skeleton';
 import { Tags } from '@/components/ui/Tags';
 import type { SkillSet } from '@/lib/types';
