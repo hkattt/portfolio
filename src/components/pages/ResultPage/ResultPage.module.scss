@@ -1,16 +1,22 @@
 ﻿@use '@/styles/variables' as vars;
 @use '@/styles/mixins' as mixins;
 
-.notFound {
-  text-align: center;
-
-  .errorCode {
+.result {
+  .subtitle {
     @include mixins.typography(vars.$font-size-xl, vars.$font-weight-light);
     margin-bottom: vars.$space-4;
+    text-align: center;
   }
 
   .title {
     @include mixins.typography(vars.$font-size-2xl, vars.$font-weight-semibold);
     margin-bottom: vars.$space-4;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
