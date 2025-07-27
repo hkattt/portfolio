@@ -1,0 +1,25 @@
+﻿@use '@/styles/variables' as vars;
+@use '@/styles/mixins' as mixins;
+
+.titleBlock {
+  margin-bottom: vars.$space-20;
+
+  .header {
+    margin-bottom: vars.$space-8;
+
+    h1 {
+      @include mixins.typography(vars.$font-size-xl, vars.$font-weight-semibold);
+      margin-bottom: vars.$space-2;
+    }
+
+    h2 {
+      @include mixins.typography(vars.$font-size-sm, vars.$font-weight-semibold);
+      color: vars.$font-quaternary;
+    }
+  }
+
+  .content {
+    @include mixins.typography(vars.$font-size-base, vars.$font-weight-light);
+    color: vars.$font-tertiary;
+  }
+}
