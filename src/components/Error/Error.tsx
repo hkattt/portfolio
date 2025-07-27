@@ -13,7 +13,7 @@ export const Error: React.FC<ErrorProps> = ({ message, error }) => {
     <div className={styles.error}>
       <div className={styles.header}>
         <FaTimesCircle size={20} />
-        <h2 className={styles.title}>An unexpected error occured</h2>
+        <h2 className={styles.title}>An unexpected error occurred</h2>
       </div>
       <p className={styles.message}>{`${message}: ${error.message}`}</p>
     </div>
