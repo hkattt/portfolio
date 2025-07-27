@@ -4,7 +4,7 @@ import { RecordModel } from 'pocketbase';
 import { FaCode, FaMobileAlt, FaGamepad, FaMicrochip, FaCogs, FaDatabase } from "react-icons/fa";
 
 import { pocketbaseUrl } from '@/lib/config';
-import type { PortfolioItem, SkillSet, Technology } from '@/lib/types';
+import type {PortfolioItem, Profile, SkillSet, Technology} from '@/lib/types';
 
 const skillTypeIconMap: Record<string, JSX.Element> = {
   'App development': <FaMobileAlt />,
@@ -15,13 +15,15 @@ const skillTypeIconMap: Record<string, JSX.Element> = {
   _: <FaCode />,
 }
 
+const getPocketbaseFileUrl = (collectionName: string, recordId: string, fileName: string) => {
+  return `${pocketbaseUrl}/api/files/${collectionName}/${recordId}/${fileName}`
+}
+
 export const mapProjectToPortfolioItem = (projectRecord: RecordModel): PortfolioItem => {
   return {
     image: {
-      src: `${pocketbaseUrl}/api/files/projects/${projectRecord["id"]}/${projectRecord["image"]}`,
-      alt: projectRecord['alt'],
-      width: 0,
-      height: 0
+      src: getPocketbaseFileUrl('projects', projectRecord['id'], projectRecord['image']),
+      alt: projectRecord['alt']
     },
     title: projectRecord['title'],
     titleLink: projectRecord['online'],
@@ -78,5 +80,14 @@ export const mapSkillToSkillSet = (skillRecord: RecordModel): SkillSet => {
     icon: skillTypeIconMap[skillRecord['title']],
     skills: skillRecord['skills'],
     sortOrder: skillRecord['sortOrder']
+  }
+}
+
+export const mapProfileRecordToProfile = (profileRecord: RecordModel): Profile => {
+  return {
+    image: {
+      src: getPocketbaseFileUrl('profile', profileRecord['id'], profileRecord['photo']),
+      alt: 'Hugo Kat profile picture'
+    }
   }
 }

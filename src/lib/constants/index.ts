@@ -19,6 +19,7 @@ export const appConstants: Constants = {
     experiences: 'experiences',
     education:   'education',
     skills:      'skills',
+    profile:     'profile'
   },
   routes: {
     home:     '/',

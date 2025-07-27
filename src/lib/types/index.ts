@@ -21,8 +21,10 @@ export type Technology = {
 export type Image = {
   src: string;
   alt: string;
-  width: number;
-  height: number;
+}
+
+export type Profile = {
+  image: Image;
 }
 
 export type SkillSet = {
