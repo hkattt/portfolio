@@ -15,13 +15,13 @@ export const ProjectsTitleBlock: React.FC = () => {
 
         <br /> <br />
 
-        Outside the classroom, I am still a total nerd - I cannot stop myself from exploring other technical areas. I taught
-        myself web development because I needed a place to showcase my work.
+        Outside of my formal studies, I continue to expand my technical skills. For example, I taught myself web development
+        because I needed a way to showcase my work.
 
         <br /> <br />
 
         More recently, I’ve been getting into game development through game jams. What started as a silly curiosity has
-        slowly become my greatest passion because it use my technical skills in a creative way.
+        slowly become my greatest passion because it allows me to express my technical skills in a creative way.
       </p>
     </TitleBlock>
   );
