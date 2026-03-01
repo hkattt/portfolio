@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   keywords: ['Portfolio', 'Software Engineer'],
   authors: [{name: 'Hugo Kat', url: 'https://hugokat.dev'}],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
   openGraph: {
     title: 'Hugo Kat',
     description: 'Hey! I\'m Hugo Kat. A software engineer and game developer. Learn more about me on this page.',
